@@ -1103,12 +1103,10 @@
     grid-column: span 8;
   }
 
-  /* Its own height (never stretched into an empty chat wall), and it stays in view while the outlet list scrolls. */
+  /* Its own height, at the top of its row: never stretched into an empty chat wall beside the taller outlet list. */
   .report > .sheet--telegram {
     grid-column: span 4;
     align-self: start;
-    position: sticky;
-    top: var(--s-6);
   }
 }
 
