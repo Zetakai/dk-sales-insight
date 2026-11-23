@@ -29,6 +29,7 @@ export function OutletsSection({ insights }: { insights: Insights }) {
 
   return (
     <Section
+      className="sheet--outlets"
       title={t.outletsTitle}
       lede={lede}
       tools={<SegmentedControl legend={t.rankBy} options={modes} value={mode} onChange={setMode} />}

@@ -72,7 +72,19 @@ data/demo.csv   synthetic data (scripts/make-demo.mjs) with the same columns and
 insights in plain Python from the spec, and the tests compare the app's result with it field by field, on both the
 sample from the brief and the synthetic demo.
 
-I built it with Claude Code as a small team of AI agents: I wrote the spec and the data contract first, then a data
-agent (`src/lib`, with tests) and a UI agent (`src/ui`) worked in parallel on separate folders, a third agent reviewed
-the result without editing it, and I merged, fixed its findings and checked the page in the browser at desktop and
-phone width.
+## How I built it with Claude Code
+
+I ran it like a small team, with me as the lead:
+
+1. **Spec and contract first.** Before any code: `docs/SPEC.md` defines every number exactly, `src/lib/types.ts` is
+   the contract between data and UI, and `scripts/reference_insights.py` computes the expected result independently.
+2. **Two agents in parallel, split by folder.** A data agent built `src/lib` with its tests against the reference. A
+   UI agent built `src/ui` with two Claude skills: `interface-design` (hierarchy, surface and type tokens, empty and
+   error states) and `dataviz` (chart form, mark specs, and its palette validator for contrast and colour-blind
+   safety).
+3. **A third agent reviewed** the merged code without editing it. It found 10 issues, among them a race between two
+   uploads, semicolon-separated Excel exports and error messages that stayed English; I fixed all of them.
+4. **Checked in a real browser**: desktop, laptop and phone widths, light and dark, both languages, and Load CSV with
+   crafted files (semicolons, a missing column, bad rows, an `.xlsx`).
+5. **Layout pass** with a dashboard-design checklist: headline figures on top, the two breakdowns side by side, the
+   outlets to visit next to the message that names them, and an insight line under each chart title.

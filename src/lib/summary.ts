@@ -97,7 +97,8 @@ const delta = (b: Breakdown, first: string, last: string) => (b.byMonth[last] ??
  * The row that moved most, by absolute rupiah. Rupiah, not percent: a small region or brand doubling from almost
  * nothing is not the news of the month; the move that changed the total is. undefined when nothing moved.
  */
-function biggestMover(rows: Breakdown[], first: string, last: string): Breakdown | undefined {
+/** The row whose net moved most between the first and last month, in rupiah (the page's insight lines use it too). */
+export function biggestMover(rows: Breakdown[], first: string, last: string): Breakdown | undefined {
   let best: Breakdown | undefined;
   for (const b of rows) {
     if (delta(b, first, last) === 0) continue;

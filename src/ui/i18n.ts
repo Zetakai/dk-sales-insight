@@ -22,6 +22,12 @@ export type PeerReason = {
   trend: { dir: 'up' | 'down'; pct: string; month: string } | null;
   idleSince: string | null;
 };
+/** The one-line takeaway under a chart title, already formatted: the largest row and the one that moved most. */
+export type Insight = {
+  top: string;
+  share: string;
+  mover?: { name: string; change: string; driver?: string };
+};
 export type DropReason = {
   type: string;
   last: string;
@@ -102,9 +108,9 @@ const en = {
   legend: 'Legend',
   regionTitle: 'Sales by region',
   regionShowAs: 'Show regions as',
-  regionLede: (first: string, last: string) =>
-    `Net sales in ${first} and ${last}, largest region first, with the change and the branch that moved it most.`,
-  regionLedeOne: 'Net sales by region, largest first.',
+  regionInsight: (r: Insight) =>
+    `${r.top} is the largest region, ${r.share} of sales.` +
+    (r.mover ? ` ${r.mover.name} moved most, ${r.mover.change}${r.mover.driver ? `, led by ${r.mover.driver}` : ''}.` : ''),
   colRegion: 'Region',
   colNetRp: 'Net sales (Rp)',
   colRegionAside: (vs: string) => `${vs} · biggest branch move`,
@@ -114,7 +120,9 @@ const en = {
   share: 'Share',
   brandTitle: 'Sales by brand',
   brandShowAs: 'Show brands as',
-  brandLede: "Net sales over the whole period, with each brand's share of the total and its change.",
+  brandInsight: (b: Insight) =>
+    `${b.top} makes up ${b.share} of sales` +
+    (b.mover?.name === b.top ? ` and moved most, ${b.mover.change}.` : b.mover ? `. ${b.mover.name} moved most, ${b.mover.change}.` : '.'),
   colBrand: 'Brand',
   colBrandAside: (vs: string) => `Share · ${vs}`,
   ofNetSales: (share: string) => `${share} of net sales`,
@@ -277,9 +285,9 @@ const id: Strings = {
   legend: 'Legenda',
   regionTitle: 'Penjualan per wilayah',
   regionShowAs: 'Tampilkan wilayah sebagai',
-  regionLede: (first, last) =>
-    `Penjualan bersih ${first} dan ${last}, wilayah terbesar di atas, dengan perubahannya dan cabang yang paling menggerakkannya.`,
-  regionLedeOne: 'Penjualan bersih per wilayah, terbesar di atas.',
+  regionInsight: (r) =>
+    `${r.top} wilayah terbesar, ${r.share} dari penjualan.` +
+    (r.mover ? ` ${r.mover.name} paling bergerak, ${r.mover.change}${r.mover.driver ? `, terutama dari ${r.mover.driver}` : ''}.` : ''),
   colRegion: 'Wilayah',
   colNetRp: 'Penjualan bersih (Rp)',
   colRegionAside: (vs) => `${vs} · cabang paling bergerak`,
@@ -289,7 +297,9 @@ const id: Strings = {
   share: 'Pangsa',
   brandTitle: 'Penjualan per merek',
   brandShowAs: 'Tampilkan merek sebagai',
-  brandLede: 'Penjualan bersih selama periode, dengan pangsa tiap merek dari total dan perubahannya.',
+  brandInsight: (b) =>
+    `${b.top} menyumbang ${b.share} dari penjualan` +
+    (b.mover?.name === b.top ? ` dan paling bergerak, ${b.mover.change}.` : b.mover ? `. ${b.mover.name} paling bergerak, ${b.mover.change}.` : '.'),
   colBrand: 'Merek',
   colBrandAside: (vs) => `Pangsa · ${vs}`,
   ofNetSales: (share) => `${share} dari penjualan bersih`,

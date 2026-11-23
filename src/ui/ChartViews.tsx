@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import type { Insights } from '../lib';
+import { biggestMover, type Breakdown, type Insights } from '../lib';
+import type { Insight } from './i18n';
 import { BarChart, Legend, type BarRow, type BarSeries } from './BarChart';
 import { useLocale } from './locale';
 import { Section } from './Section';
@@ -15,6 +16,27 @@ function useViews() {
     { value: 'table', label: t.viewTable },
   ];
   return options;
+}
+
+/**
+ * The takeaway under a chart title: the largest row, and the row that moved most in rupiah (the same rule the Telegram
+ * summary uses, so both name the same region and brand). A region's driver branch is named only when it moved the
+ * same way as its region.
+ */
+function insightOf(rows: Breakdown[], i: Insights, f: Format): Insight | null {
+  const top = rows[0];
+  if (!top) return null;
+  const { first, last, two } = monthsOf(i);
+  const m = two ? biggestMover(rows, first, last) : undefined;
+  if (!m) return { top: top.key, share: f.ratio(top.share) };
+  const delta = (m.byMonth[last] ?? 0) - (m.byMonth[first] ?? 0);
+  const d = m.driver;
+  const driver = d && d.deltaIdr !== 0 && Math.sign(d.deltaIdr) === Math.sign(delta) ? d.branch : undefined;
+  return {
+    top: top.key,
+    share: f.ratio(top.share),
+    mover: { name: m.key, change: m.changePct !== null ? f.pct(m.changePct) : f.signedIdr(delta), driver },
+  };
 }
 
 /** First and last month as an ordered pair of one hue; a one-month file gets a single series. */
@@ -38,6 +60,7 @@ export function RegionSection({ insights }: { insights: Insights }) {
   const series = monthSeries(insights, f);
   const { first, last, two } = monthsOf(insights);
   const vs = changeLabel(insights, f, t);
+  const regionInsight = insightOf(insights.byRegion, insights, f);
 
   const rows: BarRow[] = insights.byRegion.map((r) => {
     const values = series.map((s) => r.byMonth[s.id] ?? 0);
@@ -65,8 +88,9 @@ export function RegionSection({ insights }: { insights: Insights }) {
 
   return (
     <Section
+      className="sheet--region"
       title={t.regionTitle}
-      lede={two ? t.regionLede(f.monthShort(first), f.monthShort(last)) : t.regionLedeOne}
+      lede={regionInsight ? t.regionInsight(regionInsight) : undefined}
       extra={view === 'chart' ? <Legend series={series} /> : null}
       tools={<SegmentedControl legend={t.regionShowAs} options={views} value={view} onChange={setView} />}
     >
@@ -147,6 +171,7 @@ export function BrandSection({ insights }: { insights: Insights }) {
   const { first, last, two } = monthsOf(insights);
   const vs = changeLabel(insights, f, t);
   const series: BarSeries[] = [{ id: 'net', label: t.netSales, color: '--bar-last' }];
+  const brandInsight = insightOf(insights.byBrand, insights, f);
 
   const rows: BarRow[] = insights.byBrand.map((b) => ({
     key: b.key,
@@ -166,8 +191,9 @@ export function BrandSection({ insights }: { insights: Insights }) {
 
   return (
     <Section
+      className="sheet--brand"
       title={t.brandTitle}
-      lede={t.brandLede}
+      lede={brandInsight ? t.brandInsight(brandInsight) : undefined}
       tools={<SegmentedControl legend={t.brandShowAs} options={views} value={view} onChange={setView} />}
     >
       {view === 'chart' ? (

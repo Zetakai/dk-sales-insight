@@ -7,5 +7,5 @@
 export type * from './types';
 export { analyze } from './metrics';
 export { CsvFileError } from './csv';
-export { telegramSummary } from './summary';
+export { biggestMover, telegramSummary } from './summary';
 export { formatIdr, formatIdrFull, formatPct, formatMonth } from './format';
