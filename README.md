@@ -75,17 +75,20 @@ sample from the brief, the synthetic demo, and one region of the demo.
 
 ## How I built it with Claude Code
 
-I ran it like a small team, with me as the lead:
+I directed it; Claude Code did the building and the testing. A main Claude session acted as the orchestrator:
 
-1. **Spec and contract first.** Before any code: `docs/SPEC.md` defines every number exactly, `src/lib/types.ts` is
-   the contract between data and UI, and `scripts/reference_insights.py` computes the expected result independently.
+1. **Spec and contract first.** Before any code, it wrote `docs/SPEC.md` (every number defined exactly),
+   `src/lib/types.ts` (the contract between data and UI) and `scripts/reference_insights.py`, which computes the
+   expected result independently in Python.
 2. **Two agents in parallel, split by folder.** A data agent built `src/lib` with its tests against the reference. A
    UI agent built `src/ui` with two Claude skills: `interface-design` (hierarchy, surface and type tokens, empty and
    error states) and `dataviz` (chart form, mark specs, and its palette validator for contrast and colour-blind
    safety).
 3. **A third agent reviewed** the merged code without editing it. It found 10 issues, among them a race between two
-   uploads, semicolon-separated Excel exports and error messages that stayed English; I fixed all of them.
-4. **Checked in a real browser**: desktop, laptop and phone widths, light and dark, both languages, and Load CSV with
-   crafted files (semicolons, a missing column, bad rows, an `.xlsx`).
-5. **Layout pass** with a dashboard-design checklist: headline figures on top, the two breakdowns side by side, the
-   outlets to visit next to the message that names them, and an insight line under each chart title.
+   uploads, semicolon-separated Excel exports and error messages that stayed English; the main Claude session fixed
+   all of them.
+4. **Claude tested its own work** in a real browser with Playwright: desktop, laptop, phone and 2K widths, light and
+   dark, both languages, and Load CSV with crafted files (semicolons, a missing column, bad rows, an `.xlsx`).
+5. **I reviewed it visually and made the product calls:** a public repo with the brief's sample data, a line-by-line
+   option for the Telegram summary, a full-width dashboard grid instead of a centred column, a summary card that stays
+   in place, and the region filter.
