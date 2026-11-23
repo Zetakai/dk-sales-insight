@@ -5,9 +5,9 @@
  */
 
 .page {
-  /* Fluid, like a dashboard: a 1920 monitor is used edge to edge; capped there so ultra-wide screens do not stretch
-     the bars and the text beyond reading. Paragraphs keep their own measure (max-width in ch). */
-  max-width: 1920px;
+  /* Fluid, like a dashboard: a 1920 or 2560 (2K) monitor is used edge to edge; capped at 2560 so ultra-wide screens
+     do not stretch the bars and the text beyond reading. Paragraphs keep their own measure (max-width in ch). */
+  max-width: 2560px;
   margin: 0 auto;
   padding: 0 var(--s-8) var(--s-12);
 }
