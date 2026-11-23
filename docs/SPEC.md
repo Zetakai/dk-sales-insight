@@ -85,7 +85,7 @@ invalid rows, never a blank page.
 One language switch (Bahasa Indonesia default, English) covers the whole page, remembered per browser; every
 string lives in `src/ui/i18n.ts`.
 
-Layout: one column below 1200px; from 1200px a 12-column grid (max 1440px): headline full width, region | brand
+Layout: one column below 1200px; from 1200px a 12-column grid, fluid up to 1920px: headline full width, region | brand
 (6 + 6), weakest outlets | Telegram summary (8 + 4), data quality full width. Charts size to their own sheet
 (container queries). Each chart's subtitle is its takeaway (largest row, and the one that moved most, by the same
 rule as the summary), not a description of the chart.

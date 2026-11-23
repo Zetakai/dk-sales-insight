@@ -5,7 +5,9 @@
  */
 
 .page {
-  max-width: 1440px;
+  /* Fluid, like a dashboard: a 1920 monitor is used edge to edge; capped there so ultra-wide screens do not stretch
+     the bars and the text beyond reading. Paragraphs keep their own measure (max-width in ch). */
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 var(--s-8) var(--s-12);
 }
@@ -1101,22 +1103,12 @@
     grid-column: span 8;
   }
 
+  /* Its own height (never stretched into an empty chat wall), and it stays in view while the outlet list scrolls. */
   .report > .sheet--telegram {
     grid-column: span 4;
-    display: flex;
-    flex-direction: column;
-  }
-
-  /* The chat wall fills the sheet's height; the message sits at the bottom, as in Telegram. */
-  .sheet--telegram .chat {
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-  }
-
-  .sheet--telegram .chat__wall {
-    flex: 1;
-    align-items: flex-end;
+    align-self: start;
+    position: sticky;
+    top: var(--s-6);
   }
 }
 
