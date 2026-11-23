@@ -24,7 +24,7 @@ page) loads any other export with the same columns, without a restart.
 the bundle too: a built copy opens on the demo and reads the real file through Load CSV.
 
 ```bash
-npm test            # 60 tests: CSV parsing, cleaning, metrics, the summary
+npm test            # 64 tests: CSV parsing, cleaning, metrics, the summary
 npm run typecheck
 npm run build       # static site in dist/
 ```
@@ -37,7 +37,7 @@ npm run build       # static site in dist/
 | By region | Both months side by side, and the branch that moved the region most (in rupiah) |
 | By brand | Total, share of all sales, and the change |
 | 5 weakest outlets | Lowest net sales **compared with the median outlet of the same type**. A warung always sells less than a grosir, so raw totals would only ever flag small shops; against its own kind, an outlet is weak for what it is. Each row says why in one line. A second view lists the 5 biggest drops between the months. |
-| Telegram summary | One plain-text paragraph (no Markdown symbols, which Telegram would show literally), under 900 characters, in the page language. **Salin teks / Copy** puts exactly the shown text on the clipboard. |
+| Telegram summary | One plain-text paragraph (no Markdown symbols, which Telegram would show literally), under 900 characters, in the page language. **Per baris / Line by line** shows the same text broken into lines with the outlets numbered, easier to read on a phone. **Salin teks / Copy** puts exactly the shown text on the clipboard. |
 | Data quality | Everything cleaning changed, so no number moves without a reason |
 
 ## Cleaning

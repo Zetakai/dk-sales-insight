@@ -121,6 +121,12 @@ export type Insights = {
 
 export type Lang = 'id' | 'en';
 
+/**
+ * How the Telegram summary is laid out. `paragraph` is the brief (one paragraph); `lines` is the same text with line
+ * breaks, the outlets as a numbered list and a blank line between blocks, which reads faster on a phone.
+ */
+export type SummaryLayout = 'paragraph' | 'lines';
+
 /** Why one row was skipped. Every problem of a row is listed, so it can be fixed in one pass. */
 export type RowProblem =
   | { code: 'empty'; column: string }

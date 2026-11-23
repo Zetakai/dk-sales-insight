@@ -1,5 +1,5 @@
 import { formatIdr, formatMonth, formatPct } from './format';
-import type { Breakdown, Insights, Lang, OutletScore } from './types';
+import type { Breakdown, Insights, Lang, OutletScore, SummaryLayout } from './types';
 
 /**
  * The one-paragraph Telegram summary (docs/SPEC.md section 3). Plain text, no Markdown: a plain paste into
@@ -127,7 +127,13 @@ const LEVELS: Detail[] = [
   { note: false, brandMover: false, lowestRegion: false, maxName: 28 },
 ];
 
-function compose(i: Insights, lang: Lang, d: Detail): string {
+const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+/**
+ * The summary as blocks of lines. A paragraph joins everything with spaces; the `lines` layout puts each line on its
+ * own row and a blank row between blocks (headline / regions and brands / outlets / data note).
+ */
+function compose(i: Insights, lang: Lang, d: Detail, layout: SummaryLayout): string {
   const w = T[lang];
   const { months } = i.period;
   const first = months[0];
@@ -135,7 +141,12 @@ function compose(i: Insights, lang: Lang, d: Detail): string {
   const twoMonths = months.length > 1;
   const sameYear = first.slice(0, 4) === last.slice(0, 4);
   const mon = (m: string) => formatMonth(m, lang, !sameYear);
-  const parts: string[] = [];
+  const blocks: string[][] = [];
+  let parts: string[] = [];
+  const endBlock = () => {
+    if (parts.length > 0) blocks.push(parts);
+    parts = [];
+  };
 
   // 1. Period, net, and the change last month vs first month.
   let head = `${w.sales} ${periodLabel(i.period.from, i.period.to, lang)}: ${w.net} ${formatIdr(i.totals.netIdr, lang)}`;
@@ -143,6 +154,7 @@ function compose(i: Insights, lang: Lang, d: Detail): string {
     head += `, ${mon(last)} ${move(i.totals.changePct, w, lang)} ${w.vs} ${mon(first)}`;
   }
   parts.push(`${head}.`);
+  endBlock();
 
   // 2. Strongest and weakest region, then the region that moved most and the branch behind it.
   const regions = i.byRegion;
@@ -182,11 +194,18 @@ function compose(i: Insights, lang: Lang, d: Detail): string {
     parts.push(`${s}.`);
   }
 
+  endBlock();
+
   // 4. The weakest outlets against their own type, and the one action.
   if (i.weakest.length > 0) {
-    const names = i.weakest.map((o) => outletLabel(o, i, d.maxName)).join(', ');
-    parts.push(`${w.weakest(i.weakest.length)}: ${names}; ${w.action}.`);
+    const names = i.weakest.map((o) => outletLabel(o, i, d.maxName));
+    if (layout === 'lines') {
+      parts.push(`${w.weakest(i.weakest.length)}:`, ...names.map((n, k) => `${k + 1}. ${n}`), `${cap(w.action)}.`);
+    } else {
+      parts.push(`${w.weakest(i.weakest.length)}: ${names.join(', ')}; ${w.action}.`);
+    }
   }
+  endBlock();
 
   // 5. One short data note, only when cleaning changed something.
   if (d.note) {
@@ -199,19 +218,20 @@ function compose(i: Insights, lang: Lang, d: Detail): string {
     if (c.invalid.length > 0) notes.push(w.invalid(c.invalid.length));
     if (notes.length > 0) parts.push(`${w.note}: ${notes.join(', ')}.`);
   }
+  endBlock();
 
-  return parts.join(' ');
+  return layout === 'lines' ? blocks.map((b) => b.join('\n')).join('\n\n') : blocks.flat().join(' ');
 }
 
-/** One paragraph, plain text, ready to paste into a Telegram group. */
-export function telegramSummary(i: Insights, lang: Lang = 'id'): string {
+/** Plain text, ready to paste into a Telegram group: one paragraph (the default), or the same text in lines. */
+export function telegramSummary(i: Insights, lang: Lang = 'id', layout: SummaryLayout = 'paragraph'): string {
   if (i.period.months.length === 0) return T[lang].empty(i.cleaning.invalid.length);
   for (const level of LEVELS) {
-    const text = compose(i, lang, level);
+    const text = compose(i, lang, level, layout);
     if (text.length <= SUMMARY_MAX_CHARS) return text;
   }
   // Only reachable with absurdly long names; cut at a word so the paste still fits.
-  const text = compose(i, lang, LEVELS[LEVELS.length - 1]);
+  const text = compose(i, lang, LEVELS[LEVELS.length - 1], layout);
   const cut = text.slice(0, SUMMARY_MAX_CHARS - 1);
   return `${cut.slice(0, Math.max(cut.lastIndexOf(' '), 1))}…`;
 }

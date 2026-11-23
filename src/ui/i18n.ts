@@ -157,8 +157,10 @@ const en = {
     '.',
 
   tgTitle: 'Telegram summary',
-  tgLede:
-    'One paragraph for the sales team group: plain text, no formatting symbols, so it pastes exactly as shown.',
+  tgLede: 'Ready for the sales team group: plain text, no formatting symbols, so it pastes exactly as shown.',
+  tgLayoutLegend: 'Summary layout',
+  tgParagraph: 'Paragraph',
+  tgLines: 'Line by line',
   chars: (n: string) => `${n} characters`,
   overLimit: (limit: string) => ` · the summary is over its ${limit}-character limit`,
   copy: 'Copy text',
@@ -330,8 +332,10 @@ const id: Strings = {
     '.',
 
   tgTitle: 'Ringkasan Telegram',
-  tgLede:
-    'Satu paragraf untuk grup tim sales: teks biasa tanpa simbol format, jadi tampil persis seperti di sini.',
+  tgLede: 'Siap ditempel ke grup tim sales: teks biasa tanpa simbol format, jadi tampil persis seperti di sini.',
+  tgLayoutLegend: 'Tata letak ringkasan',
+  tgParagraph: 'Paragraf',
+  tgLines: 'Per baris',
   chars: (n) => `${n} karakter`,
   overLimit: (limit) => ` · ringkasan melebihi batas ${limit} karakter`,
   copy: 'Salin teks',

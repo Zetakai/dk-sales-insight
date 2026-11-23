@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { analyze, CsvFileError, telegramSummary } from '../lib';
-import type { Insights, Lang } from '../lib';
+import type { Insights, Lang, SummaryLayout } from '../lib';
 
 /**
  * Default data: data/sales.csv when it is on this machine, else data/demo.csv (synthetic). Lazy globs, so a missing
@@ -54,9 +54,9 @@ type State = {
 export type Summary = { text: string; error: string | null };
 
 /** The Telegram paragraph, or the error message when it cannot be written (never a crash). */
-export function summaryFor(insights: Insights, lang: Lang): Summary {
+export function summaryFor(insights: Insights, lang: Lang, layout: SummaryLayout = 'paragraph'): Summary {
   try {
-    return { text: telegramSummary(insights, lang), error: null };
+    return { text: telegramSummary(insights, lang, layout), error: null };
   } catch (err) {
     return { text: '', error: message(err) };
   }

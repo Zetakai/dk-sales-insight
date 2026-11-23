@@ -1,13 +1,36 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import type { Insights } from '../lib';
+import type { Insights, SummaryLayout } from '../lib';
 import { CheckIcon, CopyIcon, ReadTicks } from './icons';
 import { useLocale } from './locale';
 import { Section } from './Section';
+import { SegmentedControl } from './SegmentedControl';
 import { summaryFor } from './useInsights';
 
 const LIMIT = 900;
 
 type CopyState = 'idle' | 'copied' | 'failed';
+
+const LAYOUT_KEY = 'sales-insight:summary-layout';
+
+/** The chosen layout, remembered per browser. Storage can be blocked (private window), so every access is guarded. */
+function useLayout(): [SummaryLayout, (l: SummaryLayout) => void] {
+  const [layout, setLayout] = useState<SummaryLayout>(() => {
+    try {
+      return localStorage.getItem(LAYOUT_KEY) === 'lines' ? 'lines' : 'paragraph';
+    } catch {
+      return 'paragraph';
+    }
+  });
+  const choose = (l: SummaryLayout) => {
+    setLayout(l);
+    try {
+      localStorage.setItem(LAYOUT_KEY, l);
+    } catch {
+      /* not remembered; the choice still applies */
+    }
+  };
+  return [layout, choose];
+}
 
 async function copyText(text: string): Promise<boolean> {
   try {
@@ -40,8 +63,10 @@ export function TelegramSection({ insights }: { insights: Insights }) {
   const { t, f, lang } = useLocale();
   const [copy, setCopy] = useState<CopyState>('idle');
   const timer = useRef<number | undefined>(undefined);
-  const summary = useMemo(() => summaryFor(insights, lang), [insights, lang]);
-  // One paragraph, exactly as the brief asks: what is shown is what is copied.
+  const [layout, setLayout] = useLayout();
+  const summary = useMemo(() => summaryFor(insights, lang, layout), [insights, lang, layout]);
+  // One paragraph by default, as the brief asks; "lines" is the same text broken up for a phone. What is shown is
+  // exactly what is copied.
   const text = summary.text;
   const [sentAt] = useState(() => new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' }));
   const chars = [...text].length;
@@ -59,7 +84,22 @@ export function TelegramSection({ insights }: { insights: Insights }) {
   };
 
   return (
-    <Section title={t.tgTitle} className="sheet--telegram" lede={t.tgLede}>
+    <Section
+      title={t.tgTitle}
+      className="sheet--telegram"
+      lede={t.tgLede}
+      tools={
+        <SegmentedControl
+          legend={t.tgLayoutLegend}
+          options={[
+            { value: 'paragraph', label: t.tgParagraph },
+            { value: 'lines', label: t.tgLines },
+          ]}
+          value={layout}
+          onChange={setLayout}
+        />
+      }
+    >
       <div className="chat">
         <div className="chat__wall">
           <div className={failed ? 'bubble bubble--placeholder' : 'bubble'}>

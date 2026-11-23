@@ -62,6 +62,29 @@ describe.each(['id', 'en'] as const)('telegramSummary(sample, %s)', (lang) => {
   });
 });
 
+describe.each(['id', 'en'] as const)('telegramSummary(sample, %s, lines)', (lang) => {
+  const para = telegramSummary(insights, lang);
+  const text = telegramSummary(insights, lang, 'lines');
+
+  it('is the paragraph in blocks: headline, regions and brands, numbered outlets, data note', () => {
+    const blocks = text.split('\n\n');
+    expect(blocks).toHaveLength(4);
+    expect(para.startsWith(`${blocks[0]} `)).toBe(true);
+    expect(blocks[1].split('\n')).toHaveLength(3); // top region, the mover, the brands
+    const outlets = blocks[2].split('\n');
+    expect(outlets.slice(1, 6).map((l) => l.slice(0, 3))).toEqual(['1. ', '2. ', '3. ', '4. ', '5. ']);
+    expect(outlets[6]).toBe(lang === 'id' ? 'Prioritaskan kunjungan minggu ini.' : 'Prioritise visits this week.');
+    expect(blocks[3]).toMatch(lang === 'id' ? /^Catatan data:/ : /^Data note:/);
+  });
+
+  it('says the same words as the paragraph, stays plain text and under 900 characters', () => {
+    const words = (s: string) => s.replace(/\d+\. /g, '').replace(/[;:,.\s]+/g, ' ').toLowerCase().trim();
+    expect(words(text)).toBe(words(para));
+    expect(text).not.toMatch(/[*_`#]/);
+    expect(text.length).toBeLessThanOrEqual(900);
+  });
+});
+
 describe('telegramSummary, other cases', () => {
   it('defaults to Indonesian', () => {
     expect(telegramSummary(insights)).toBe(telegramSummary(insights, 'id'));

@@ -70,6 +70,10 @@ In this order, each only when it says something:
 
 It must read like a sales manager wrote it: short clauses, no "This summary…".
 
+`telegramSummary(insights, lang, 'lines')` gives the same words laid out for a phone: the headline, then the region
+and brand lines, then the outlets as a numbered list with the action under them, then the data note, with a blank
+line between blocks. The UI defaults to the paragraph (the brief) and offers the lines layout as a switch.
+
 ## 4. UI
 
 A single page, desktop first and clean at 375px wide. Reads `data/sales.csv` on load when present, else
@@ -89,7 +93,7 @@ Sections, in this order:
 5. Weakest outlets: the 5 flagged outlets as rows (name, id, type, branch, salesman, net, % of its type's median,
    change, last order) with one plain reason each; a two-option switch "Weakest vs peers / Biggest drops".
 6. Telegram summary: the paragraph shown as a Telegram message (the page's signature element), in the page
-   language, a Copy button that copies the exact text, and the character count.
+   language, a Paragraph / Line by line switch, a Copy button that copies the exact text, and the character count.
 7. Data quality: what cleaning changed (section 1 table), collapsed by default, with counts in its header.
 
 Design direction (interface-design, dataviz skills):
