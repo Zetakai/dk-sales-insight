@@ -1,0 +1,973 @@
+date,invoice_no,region,branch,outlet_id,outlet_name,outlet_type,salesman,brand,sku,qty_carton,price_per_carton_idr,gross_sales_idr,discount_idr,net_sales_idr
+2026-09-01,INV700001,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-09-01,INV700001,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Usagi,Usagi Snack Keju 60g,8,140000,1120000,33600,1086400
+2026-09-01,INV700002,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-01,INV700002,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-01,INV700003,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-01,INV700004,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-09-01,INV700004,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,0,1760000
+2026-09-01,INV700004,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-09-01,INV700005,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-01,INV700005,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-01,INV700005,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-09-01,INV700006,Jabar,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,0,2310000
+2026-09-01,INV700006,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,9,240000,2160000,0,2160000
+2026-09-01,INV700007,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-01,INV700008,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Garing 150g,6,180000,1080000,0,1080000
+2026-09-01,INV700008,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Usagi,Usagi Snack Keju 60g,10,140000,1400000,0,1400000
+2026-09-01,INV700009,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-01,INV700009,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-02,INV700010,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-02,INV700010,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-02,INV700010,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-02,INV700011,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-02,INV700011,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-02,INV700012,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-02,INV700012,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-03,INV700013,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,6,250000,1500000,45000,1455000
+2026-09-03,INV700013,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Balado 100g,7,175000,1225000,0,1225000
+2026-09-03,INV700013,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Usagi,Usagi Snack Keju 60g,7,140000,980000,29400,950600
+2026-09-03,INV700014,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-03,INV700015,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-09-03,INV700015,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-09-03,INV700015,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-09-03,INV700016,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-09-03,INV700017,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,12,240000,2880000,0,2880000
+2026-09-03,INV700017,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,0,2500000
+2026-09-03,INV700018,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-03,INV700018,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-03,INV700019,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,0,1890000
+2026-09-03,INV700019,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,10,160000,1600000,0,1600000
+2026-09-03,INV700019,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Pilus,Pilus Pedas 95g,8,150000,1200000,36000,1164000
+2026-09-03,INV700020,JAWA TIMUR,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Garing 150g,10,180000,1800000,0,1800000
+2026-09-03,INV700021,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-03,INV700021,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-03,INV700022,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-03,INV700022,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-03,INV700023,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-03,INV700024,Kalimantan,Samarinda,D2049,Grosir Pelangi Harapan,Grosir,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,8,250000,2000000,0,2000000
+2026-09-04,INV700025,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-04,INV700025,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-04,INV700026,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-04,INV700026,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-04,INV700026,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-04,INV700027,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-09-04,INV700028,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Sukro,Sukro Balado 100g,10,175000,1750000,0,1750000
+2026-09-04,INV700028,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,6,210000,1260000,37800,1222200
+2026-09-04,INV700029,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-04,INV700029,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-04,INV700029,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-05,INV700030,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,12,150000,1800000,0,1800000
+2026-09-05,INV700030,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,9,170000,1530000,45900,1484100
+2026-09-05,INV700031,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-05,INV700032,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,12,210000,2520000,0,2520000
+2026-09-05,INV700033,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-09-05,INV700034,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,57600,1862400
+2026-09-05,INV700034,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,10,180000,1800000,54000,1746000
+2026-09-05,INV700035,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-05,INV700035,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-05,INV700035,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-05,INV700036,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,12,250000,3000000,0,3000000
+2026-09-05,INV700036,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Pilus,Pilus Pedas 95g,7,150000,1050000,31500,1018500
+2026-09-05,INV700037,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-05,INV700038,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-05,INV700038,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-05,INV700039,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-09-05,INV700039,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-06,INV700040,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-09-06,INV700040,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,12,240000,2880000,0,2880000
+2026-09-06,INV700040,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,11,250000,2750000,82500,2667500
+2026-09-06,INV700041,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-06,INV700041,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-06,INV700041,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-06,INV700042,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-06,INV700042,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-06,INV700042,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-06,INV700043,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Tos Tos,Tos Tos Jagung Bakar 140g,11,250000,2750000,0,2750000
+2026-09-06,INV700043,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,6,210000,1260000,37800,1222200
+2026-09-06,INV700043,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,9,240000,2160000,64800,2095200
+2026-09-06,INV700044,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-06,INV700044,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-06,INV700044,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-06,INV700045,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-06,INV700045,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-06,INV700046,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-09-06,INV700046,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-06,INV700046,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-06,INV700047,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Tos Tos,Tos Tos Jagung Bakar 140g,7,250000,1750000,52500,1697500
+2026-09-06,INV700048,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-06,INV700048,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-06,INV700048,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Balado 100g,5,175000,875000,0,875000
+2026-09-07,INV700049,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-09-07,INV700049,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-07,INV700050,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-07,INV700051,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-07,INV700051,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-09-07,INV700052,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-07,INV700052,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-07,INV700053,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari ,Grosir,Galih,Pilus,Pilus Pedas 95g,11,150000,1650000,49500,1600500
+2026-09-07,INV700054,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-07,INV700054,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Tos Tos,Tos Tos Jagung Bakar 140g,5,250000,1250000,0,1250000
+2026-09-07,INV700054,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-09-08,INV700055,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-09-08,INV700055,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,12,150000,1800000,54000,1746000
+2026-09-08,INV700055,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,8,160000,1280000,0,1280000
+2026-09-08,INV700056,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-08,INV700056,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-08,INV700057,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-08,INV700057,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-08,INV700058,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-09-08,INV700058,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,12,210000,2520000,0,2520000
+2026-09-08,INV700058,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Pilus,Pilus Pedas 95g,7,150000,1050000,31500,1018500
+2026-09-08,INV700059,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-08,INV700059,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-08,INV700059,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-08,INV700060,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-08,INV700061,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-08,INV700062,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,7,240000,1680000,0,1680000
+2026-09-08,INV700062,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-09-08,INV700062,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,52800,1707200
+2026-09-08,INV700063,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-08,INV700063,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-08,INV700064,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-08,INV700064,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-08,INV700065,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,8,210000,1680000,0,1680000
+2026-09-08,INV700066,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-08,INV700067,Kalimantan,Samarinda,D2049,Grosir Pelangi Harapan,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-09-08,INV700067,Kalimantan,Samarinda,D2049,Grosir Pelangi Harapan,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,11,240000,2640000,0,2640000
+2026-09-08,INV700068,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-09-08,INV700068,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-08,INV700068,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-09,INV700069,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-09-09,INV700069,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-09-09,INV700070,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Usagi,Usagi Snack Keju 60g,4,140000,560000,0,560000
+2026-09-09,INV700070,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-09,INV700070,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-09,INV700071,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-09,INV700071,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-09,INV700071,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-09,INV700072,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,8,150000,1200000,0,1200000
+2026-09-09,INV700072,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,11,180000,1980000,0,1980000
+2026-09-09,INV700072,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Balado 100g,8,175000,1400000,0,1400000
+2026-09-09,INV700073,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-09-09,INV700073,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,12,210000,2520000,0,2520000
+2026-09-09,INV700074,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-09,INV700074,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-09,INV700075,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-09-09,INV700076,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-09,INV700076,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-09-10,INV700077,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-09-10,INV700077,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,75000,2425000
+2026-09-10,INV700077,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Balado 100g,11,175000,1925000,57750,1867250
+2026-09-10,INV700078,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-10,INV700078,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-10,INV700078,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-10,INV700079,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-10,INV700080,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,0,1890000
+2026-09-10,INV700080,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,12,240000,2880000,0,2880000
+2026-09-10,INV700080,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,9,250000,2250000,67500,2182500
+2026-09-10,INV700081,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-10,INV700082,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-10,INV700083,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-10,INV700083,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Usagi,Usagi Snack Keju 60g,5,140000,700000,0,700000
+2026-09-10,INV700084,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-10,INV700085,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-10,INV700086,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-09-10,INV700087,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-10,INV700087,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-10,INV700087,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-10,INV700088,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-11,INV700089,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-11,INV700089,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,5,175000,875000,0,875000
+2026-09-11,INV700089,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-11,INV700090,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Usagi,Usagi Snack Keju 60g,6,140000,840000,0,840000
+2026-09-11,INV700090,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Balado 100g,9,175000,1575000,0,1575000
+2026-09-11,INV700090,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,75000,2425000
+2026-09-11,INV700091,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-11,INV700091,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-11,INV700092,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Balado 100g,8,175000,1400000,0,1400000
+2026-09-11,INV700092,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-09-11,INV700093,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-11,INV700094,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Usagi,Usagi Snack Keju 60g,12,140000,1680000,0,1680000
+2026-09-11,INV700095,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-11,INV700096,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-12,INV700097,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-12,INV700098,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-12,INV700098,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-12,INV700099,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-12,INV700099,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-12,INV700099,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-12,INV700100,Jawa Barat,Bandung,D2014,Mini Cahaya Bintang,Minimarket,Bayu,Tic Tac,Tic Tac Sapi Panggang 100g,5,160000,800000,0,800000
+2026-09-12,INV700101,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Balado 100g,6,175000,1050000,0,1050000
+2026-09-12,INV700102,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-09-12,INV700102,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-12,INV700102,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-12,INV700103,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-12,INV700103,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-12,INV700103,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-12,INV700104,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-12,INV700104,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-12,INV700104,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-09-12,INV700105,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-12,INV700106,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-12,INV700106,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-12,INV700107,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-12,INV700107,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-12,INV700108,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-12,INV700108,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-13,INV700109,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-13,INV700109,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-09-13,INV700109,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-09-13,INV700110,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-13,INV700110,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-13,INV700110,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-09-13,INV700111,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,44100,1425900
+2026-09-13,INV700111,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Pilus,Pilus Pedas 95g,11,150000,1650000,0,1650000
+2026-09-14,INV700112,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-14,INV700113,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-14,INV700114,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,0,1920000
+2026-09-14,INV700115,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-14,INV700115,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-14,INV700115,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-14,INV700116,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-14,INV700116,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-14,INV700117,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-14,INV700117,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-14,INV700117,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-15,INV700118,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-15,INV700118,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-15,INV700118,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-15,INV700119,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,0,1760000
+2026-09-15,INV700119,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,7,170000,1190000,0,1190000
+2026-09-15,INV700119,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,0,1620000
+2026-09-15,INV700120,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-15,INV700121,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-09-15,INV700121,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-15,INV700121,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-15,INV700122,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-15,INV700122,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-15,INV700122,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-15,INV700123,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,63000,2037000
+2026-09-15,INV700123,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,8,240000,1920000,57600,1862400
+2026-09-16,INV700124,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-16,INV700124,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-16,INV700125,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-16,INV700126,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Pilus,Pilus Pedas 95g,6,150000,900000,0,900000
+2026-09-16,INV700126,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Usagi,Usagi Snack Keju 60g,12,140000,1680000,0,1680000
+2026-09-16,INV700126,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,43200,1396800
+2026-09-16,INV700127,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-16,INV700128,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-16,INV700128,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-09-16,INV700128,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-16,INV700129,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-17,INV700130,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-17,INV700131,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-17,INV700132,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-09-17,INV700133,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-17,INV700134,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-17,INV700134,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-17,INV700134,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-17,INV700135,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-17,INV700135,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-17,INV700135,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-09-18,INV700136,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Garing 150g,7,180000,1260000,0,1260000
+2026-09-18,INV700136,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Balado 100g,11,175000,1925000,57750,1867250
+2026-09-18,INV700137,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-18,INV700137,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-18,INV700138,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-18,INV700139,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-18,INV700139,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-18,INV700140,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,7,250000,1750000,0,1750000
+2026-09-18,INV700140,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,0,1760000
+2026-09-18,INV700140,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Sukro,Sukro Balado 100g,12,175000,2100000,0,2100000
+2026-09-18,INV700141,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-18,INV700141,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-18,INV700142,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,10,180000,1800000,0,1800000
+2026-09-18,INV700142,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,10,240000,2400000,72000,2328000
+2026-09-18,INV700143,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-18,INV700143,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-18,INV700143,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-18,INV700144,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-19,INV700145,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,11,150000,1650000,0,1650000
+2026-09-19,INV700146,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-19,INV700146,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-19,INV700147,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-19,INV700147,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-19,INV700148,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-19,INV700149,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-09-19,INV700150,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-19,INV700150,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-19,INV700151,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-19,INV700152,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-19,INV700152,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-19,INV700152,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-19,INV700152,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-19,INV700153,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,0,2310000
+2026-09-19,INV700153,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,6,240000,1440000,0,1440000
+2026-09-19,INV700153,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Sukro,Sukro Balado 100g,6,175000,1050000,0,1050000
+2026-09-19,INV700154,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-19,INV700155,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-19,INV700156,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,6,250000,1500000,0,1500000
+2026-09-19,INV700156,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Sukro,Sukro Original 100g,8,170000,1360000,40800,1319200
+2026-09-20,INV700157,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Atom 250g,8,210000,1680000,0,1680000
+2026-09-20,INV700157,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,11,150000,1650000,0,1650000
+2026-09-20,INV700157,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Usagi,Usagi Snack Keju 60g,10,140000,1400000,0,1400000
+2026-09-20,INV700158,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-09-20,INV700158,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-20,INV700158,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-20,INV700159,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-09-20,INV700159,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,7,160000,1120000,0,1120000
+2026-09-20,INV700160,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,6,160000,960000,0,960000
+2026-09-20,INV700160,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Sukro,Sukro Original 100g,12,170000,2040000,61200,1978800
+2026-09-20,INV700161,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-20,INV700161,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-20,INV700162,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-20,INV700162,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-20,INV700162,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-21,INV700163,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-21,INV700163,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-21,INV700163,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-21,INV700164,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-21,INV700164,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-21,INV700165,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-09-21,INV700165,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-21,INV700165,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-21,INV700166,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-09-21,INV700166,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-21,INV700167,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Sukro,Sukro Balado 100g,10,175000,1750000,0,1750000
+2026-09-21,INV700167,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,56700,1833300
+2026-09-21,INV700168,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-09-21,INV700168,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,0,2500000
+2026-09-21,INV700168,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,7,240000,1680000,50400,1629600
+2026-09-21,INV700169,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-21,INV700169,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-09-21,INV700169,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-09-21,INV700170,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-09-21,INV700170,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-09-21,INV700170,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-21,INV700171,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Balado 100g,5,175000,875000,0,875000
+2026-09-21,INV700171,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-22,INV700172,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-22,INV700173,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-09-22,INV700173,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-22,INV700173,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-22,INV700174,Jawa Barat,Bandung,D2015,Toko Bintang Harapan,Toko Kelontong,Bayu,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-22,INV700174,Jawa Barat,Bandung,D2015,Toko Bintang Harapan,Toko Kelontong,Bayu,Tos Tos,Tos Tos Jagung Bakar 140g,4,250000,1000000,0,1000000
+2026-09-22,INV700175,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-22,INV700176,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-09-22,INV700176,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,6,240000,1440000,43200,1396800
+2026-09-22,INV700177,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-09-22,INV700177,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Tos Tos,Tos Tos Jagung Bakar 140g,11,250000,2750000,0,2750000
+2026-09-22,INV700177,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,52800,1707200
+2026-09-22,INV700178,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-09-23,INV700179,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-23,INV700180,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-23,INV700180,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-23,INV700180,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-09-23,INV700181,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-23,INV700181,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-24,INV700182,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-24,INV700182,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-09-24,INV700183,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Balado 100g,10,175000,1750000,52500,1697500
+2026-09-24,INV700183,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-09-24,INV700184,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,4,250000,1000000,0,1000000
+2026-09-24,INV700184,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-24,INV700184,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-24,INV700185,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-09-24,INV700185,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-24,INV700186,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-24,INV700186,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-24,INV700187,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-24,INV700188,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-24,INV700188,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-24,INV700188,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-25,INV700189,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-25,INV700190,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-25,INV700190,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-09-25,INV700191,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-25,INV700191,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-09-25,INV700191,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-25,INV700192,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-25,INV700192,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-25,INV700192,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-25,INV700193,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-25,INV700193,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-25,INV700193,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-25,INV700194,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-25,INV700194,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-25,INV700194,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-26,INV700195,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Balado 100g,6,175000,1050000,31500,1018500
+2026-09-26,INV700195,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,52800,1707200
+2026-09-26,INV700195,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,6,170000,1020000,0,1020000
+2026-09-26,INV700196,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-26,INV700196,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-26,INV700197,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,0,1470000
+2026-09-26,INV700198,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-26,INV700199,Jawa Barat,Bandung,D2014,Mini Cahaya Bintang,Minimarket,Bayu,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-26,INV700199,Jawa Barat,Bandung,D2014,Mini Cahaya Bintang,Minimarket,Bayu,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-09-26,INV700200,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-09-26,INV700200,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-09-26,INV700201,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-26,INV700202,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-26,INV700202,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-26,INV700202,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-09-26,INV700203,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-09-26,INV700203,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,63000,2037000
+2026-09-26,INV700203,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,7,240000,1680000,0,1680000
+2026-09-26,INV700204,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-09-26,INV700204,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-27,INV700205,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Balado 100g,7,175000,1225000,36750,1188250
+2026-09-27,INV700205,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Pilus,Pilus Pedas 95g,9,150000,1350000,40500,1309500
+2026-09-27,INV700206,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-27,INV700206,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-27,INV700207,Jawa Barat,Bandung,D2015,Toko Bintang Harapan,Toko Kelontong,Bayu,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-09-27,INV700208,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-27,INV700208,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-27,INV700208,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-09-27,INV700209,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-09-27,INV700209,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-09-27,INV700209,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-09-27,INV700210,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,44100,1425900
+2026-09-27,INV700211,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-27,INV700211,Kalimantan,Samarinda,D2051,Toko Harapan Rejeki,Toko Kelontong,Nur,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-09-28,INV700212,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-09-28,INV700213,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-28,INV700214,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-28,INV700214,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-28,INV700215,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Original 100g,11,170000,1870000,0,1870000
+2026-09-28,INV700215,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Balado 100g,12,175000,2100000,0,2100000
+2026-09-28,INV700215,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Usagi,Usagi Snack Keju 60g,12,140000,1680000,0,1680000
+2026-09-28,INV700216,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-28,INV700216,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-28,INV700216,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-28,INV700217,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-28,INV700217,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-28,INV700218,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-09-28,INV700218,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-09-28,INV700219,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,9,170000,1530000,0,1530000
+2026-09-28,INV700219,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,7,250000,1750000,0,1750000
+2026-09-28,INV700220,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,6,210000,1260000,0,1260000
+2026-09-28,INV700220,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,8,240000,1920000,0,1920000
+2026-09-28,INV700220,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Balado 100g,7,175000,1225000,0,1225000
+2026-09-28,INV700221,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-09-28,INV700221,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-29,INV700222,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-09-29,INV700222,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-09-29,INV700222,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-09-29,INV700223,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-29,INV700223,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-09-29,INV700224,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-09-29,INV700224,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-29,INV700224,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-09-29,INV700225,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-09-29,INV700225,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-09-29,INV700225,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-09-29,INV700226,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-09-30,INV700227,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-09-30,INV700227,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-09-30,INV700228,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-30,INV700228,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-09-30,INV700229,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,11,250000,2750000,0,2750000
+2026-09-30,INV700229,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,10,240000,2400000,0,2400000
+2026-09-30,INV700229,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,12,180000,2160000,0,2160000
+2026-09-30,INV700230,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Usagi,Usagi Snack Keju 60g,7,140000,980000,0,980000
+2026-09-30,INV700230,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Original 100g,11,170000,1870000,56100,1813900
+2026-09-30,INV700231,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-09-30,INV700231,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-09-30,INV700232,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-09-30,INV700232,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-09-30,INV700232,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-09-30,INV700233,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-09-30,INV700233,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-09-30,INV700234,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-10-01,INV700235,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-10-01,INV700235,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-01,INV700236,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-01,INV700237,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-10-01,INV700238,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,7,180000,1260000,37800,1222200
+2026-10-01,INV700239,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-01,INV700239,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-01,INV700239,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-01,INV700240,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-01,INV700241,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Usagi,Usagi Snack Keju 60g,12,140000,1680000,50400,1629600
+2026-10-01,INV700242,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-01,INV700243,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-02,INV700244,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-02,INV700244,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-02,INV700245,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-02,INV700245,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-02,INV700246,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-02,INV700246,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-02,INV700247,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,43200,1396800
+2026-10-02,INV700247,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-10-02,INV700247,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,,Usagi,Usagi Snack Keju 60g,8,140000,1120000,0,1120000
+2026-10-02,INV700248,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-02,INV700249,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-10-02,INV700249,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Balado 100g,12,175000,2100000,0,2100000
+2026-10-02,INV700250,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-02,INV700250,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-02,INV700251,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-02,INV700251,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-02,INV700252,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-02,INV700252,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-10-02,INV700252,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-03,INV700253,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-03,INV700253,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-03,INV700253,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-03,INV700254,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-03,INV700254,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-10-03,INV700254,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-03,INV700255,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Original 100g,6,170000,1020000,0,1020000
+2026-10-03,INV700255,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,44100,1425900
+2026-10-03,INV700255,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Balado 100g,7,175000,1225000,0,1225000
+2026-10-03,INV700256,Jawa Barat,Bandung,D2014,Mini Cahaya Bintang,Minimarket,Bayu,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-03,INV700256,Jawa Barat,Bandung,D2014,Mini Cahaya Bintang,Minimarket,Bayu,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-03,INV700257,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-03,INV700257,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-03,INV700257,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-03,INV700258,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-03,INV700258,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-03,INV700259,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-03,INV700259,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-03,INV700259,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-04,INV700260,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,0,1760000
+2026-10-04,INV700260,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Usagi,Usagi Snack Keju 60g,8,140000,1120000,0,1120000
+2026-10-04,INV700261,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-10-04,INV700261,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-04,INV700262,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-04,INV700262,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-04,INV700263,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-04,INV700264,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,6,250000,1500000,45000,1455000
+2026-10-04,INV700264,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-10-04,INV700265,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-04,INV700265,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-10-04,INV700265,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-04,INV700266,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,44100,1425900
+2026-10-04,INV700266,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Usagi,Usagi Snack Keju 60g,11,140000,1540000,0,1540000
+2026-10-04,INV700266,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,43200,1396800
+2026-10-04,INV700267,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-04,INV700267,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-04,INV700267,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-04,INV700268,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Kulit 200g,8,240000,1920000,0,1920000
+2026-10-04,INV700269,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-10-04,INV700270,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-10-04,INV700270,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,6,240000,1440000,0,1440000
+2026-10-04,INV700271,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-04,INV700272,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-04,INV700272,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,5,160000,800000,0,800000
+2026-10-05,INV700273,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,57600,1862400
+2026-10-05,INV700273,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Atom 250g,12,210000,2520000,0,2520000
+2026-10-05,INV700273,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Usagi,Usagi Snack Keju 60g,12,140000,1680000,0,1680000
+2026-10-05,INV700274,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-10-05,INV700275,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-05,INV700275,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-05,INV700276,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,7,160000,1120000,0,1120000
+2026-10-05,INV700276,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-10-05,INV700277,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-05,INV700277,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-05,INV700278,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-05,INV700278,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-05,INV700279,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-05,INV700280,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-05,INV700281,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-10-05,INV700281,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Sukro,Sukro Balado 100g,10,175000,1750000,0,1750000
+2026-10-05,INV700282,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-05,INV700282,Sumatera,Lampung,D2043,Toko Cahaya Bahagia,Toko Kelontong,Ahmad,Usagi,Usagi Snack Keju 60g,4,140000,560000,0,560000
+2026-10-06,INV700283,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-06,INV700283,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-06,INV700284,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-06,INV700284,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-10-06,INV700285,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Pilus,Pilus Pedas 95g,8,150000,1200000,36000,1164000
+2026-10-06,INV700285,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,6,210000,1260000,37800,1222200
+2026-10-06,INV700286,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-06,INV700287,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-06,INV700287,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-06,INV700287,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-06,INV700288,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-07,INV700289,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-07,INV700290,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-07,INV700291,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-07,INV700292,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-07,INV700292,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-07,INV700292,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-07,INV700293,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-07,INV700294,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-07,INV700295,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-07,INV700295,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-07,INV700295,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-08,INV700296,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-08,INV700296,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-08,INV700296,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-08,INV700297,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-08,INV700298,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,7,180000,1260000,37800,1222200
+2026-10-08,INV700298,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,10,160000,1600000,48000,1552000
+2026-10-08,INV700298,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Original 100g,6,170000,1020000,30600,989400
+2026-10-08,INV700299,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-08,INV700300,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-10-08,INV700300,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Tos Tos,Tos Tos Jagung Bakar 140g,9,250000,2250000,0,2250000
+2026-10-08,INV700300,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,0,1620000
+2026-10-08,INV700301,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,8,240000,1920000,0,1920000
+2026-10-08,INV700301,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,12,180000,2160000,0,2160000
+2026-10-08,INV700301,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Pilus,Pilus Pedas 95g,7,150000,1050000,31500,1018500
+2026-10-08,INV700302,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-08,INV700302,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-09,INV700303,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-09,INV700303,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-09,INV700303,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-10-09,INV700304,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-09,INV700304,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-10-09,INV700304,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-10-09,INV700305,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-09,INV700306,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-09,INV700306,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-09,INV700306,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-09,INV700307,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-09,INV700308,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-09,INV700308,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-09,INV700309,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-09,INV700309,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-10-09,INV700309,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-10,INV700310,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-10-10,INV700311,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,48600,1571400
+2026-10-10,INV700311,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Balado 100g,6,175000,1050000,31500,1018500
+2026-10-10,INV700312,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-10,INV700312,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-10,INV700313,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-10,INV700313,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-10,INV700313,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-10,INV700314,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-10,INV700314,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-10-10,INV700314,Jawa Timur,Kediri,D2034,Mini Mitra Sentosa,Minimarket,Galih,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-10-10,INV700315,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-11,INV700316,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-11,INV700317,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-11,INV700317,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,4,180000,720000,0,720000
+2026-10-11,INV700317,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-11,INV700318,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-11,INV700318,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-11,INV700318,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-11,INV700319,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-11,INV700319,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-11,INV700319,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Usagi,Usagi Snack Keju 60g,4,140000,560000,0,560000
+2026-10-11,INV700320,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-11,INV700321,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Usagi,Usagi Snack Keju 60g,7,140000,980000,0,980000
+2026-10-11,INV700321,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,0,1890000
+2026-10-11,INV700321,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,75000,2425000
+2026-10-11,INV700322,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-11,INV700322,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-11,INV700323,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-11,INV700324,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-11,INV700324,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-12,INV700325,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Usagi,Usagi Snack Keju 60g,6,140000,840000,0,840000
+2026-10-12,INV700325,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,12,150000,1800000,0,1800000
+2026-10-12,INV700326,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-12,INV700326,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-12,INV700327,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-12,INV700327,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-12,INV700327,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-12,INV700328,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Usagi,Usagi Snack Keju 60g,8,140000,1120000,0,1120000
+2026-10-12,INV700328,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,8,170000,1360000,40800,1319200
+2026-10-12,INV700329,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-12,INV700329,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-12,INV700330,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,8,160000,1280000,38400,1241600
+2026-10-12,INV700330,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Sukro,Sukro Original 100g,8,170000,1360000,0,1360000
+2026-10-12,INV700330,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,48600,1571400
+2026-10-12,INV700331,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Sukro,Sukro Original 100g,6,170000,1020000,30600,989400
+2026-10-12,INV700332,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-12,INV700332,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-12,INV700332,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-12,INV700333,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,0,1760000
+2026-10-12,INV700334,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-12,INV700334,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-12,INV700335,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Sukro,Sukro Balado 100g,10,175000,1750000,52500,1697500
+2026-10-12,INV700336,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-12,INV700336,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-12,INV700336,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-13,INV700337,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,10,150000,1500000,45000,1455000
+2026-10-13,INV700338,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-10-13,INV700338,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-13,INV700339,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-13,INV700339,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-13,INV700339,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-13,INV700340,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Original 100g,12,170000,2040000,0,2040000
+2026-10-13,INV700340,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Kacang Dua Kelinci,Kacang Garing 150g,8,180000,1440000,0,1440000
+2026-10-13,INV700340,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,7,240000,1680000,50400,1629600
+2026-10-13,INV700341,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,5,250000,1250000,0,1250000
+2026-10-13,INV700342,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-10-13,INV700342,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,11,180000,1980000,59400,1920600
+2026-10-13,INV700343,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Balado 100g,7,175000,1225000,36750,1188250
+2026-10-13,INV700343,Jawa Barat,Bandung,D2013,Grosir Pelangi Sentosa,Grosir,Bayu,Sukro,Sukro Original 100g,7,170000,1190000,35700,1154300
+2026-10-13,INV700344,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,12,240000,2880000,0,2880000
+2026-10-13,INV700344,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Pilus,Pilus Pedas 95g,10,150000,1500000,0,1500000
+2026-10-13,INV700344,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Garing 150g,6,180000,1080000,0,1080000
+2026-10-13,INV700345,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,0,2310000
+2026-10-13,INV700345,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Kulit 200g,11,240000,2640000,79200,2560800
+2026-10-13,INV700345,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Tic Tac,Tic Tac Sapi Panggang 100g,7,160000,1120000,0,1120000
+2026-10-13,INV700346,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-13,INV700346,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-13,INV700346,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-13,INV700347,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-14,INV700348,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-14,INV700348,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-14,INV700349,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,8,160000,1280000,0,1280000
+2026-10-14,INV700350,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-14,INV700350,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-10-14,INV700351,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-14,INV700352,Jawa Tengah,Semarang,D2024,Warung Pelangi Harapan,Warung,Clara,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-14,INV700353,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,0,1920000
+2026-10-14,INV700353,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Usagi,Usagi Snack Keju 60g,7,140000,980000,0,980000
+2026-10-14,INV700354,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Pilus,Pilus Pedas 95g,12,150000,1800000,0,1800000
+2026-10-15,INV700355,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,0,1440000
+2026-10-15,INV700355,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Sukro,Sukro Original 100g,6,170000,1020000,0,1020000
+2026-10-15,INV700355,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Garing 150g,7,180000,1260000,37800,1222200
+2026-10-15,INV700356,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Sukro,Sukro Balado 100g,6,175000,1050000,31500,1018500
+2026-10-15,INV700357,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,5,175000,875000,0,875000
+2026-10-15,INV700358,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Sukro,Sukro Original 100g,6,170000,1020000,30600,989400
+2026-10-15,INV700358,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Tos Tos,Tos Tos Jagung Bakar 140g,12,250000,3000000,0,3000000
+2026-10-15,RTR900101,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,-1,170000,-170000,0,-170000
+2026-10-16,INV700359,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-16,INV700359,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-16,INV700359,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-16,INV700360,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,7,160000,1120000,33600,1086400
+2026-10-16,INV700361,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Usagi,Usagi Snack Keju 60g,7,140000,980000,0,980000
+2026-10-16,INV700361,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,12,150000,1800000,0,1800000
+2026-10-16,INV700362,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-16,INV700362,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-16,INV700362,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-16,INV700363,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-10-16,INV700364,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Sukro,Sukro Original 100g,12,170000,2040000,0,2040000
+2026-10-16,INV700365,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-16,INV700366,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-16,INV700366,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-10-16,INV700366,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-16,INV700367,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-10-17,INV700368,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Pilus,Pilus Pedas 95g,12,150000,1800000,0,1800000
+2026-10-17,INV700369,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-17,INV700369,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-17,INV700370,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Pilus,Pilus Pedas 95g,11,150000,1650000,49500,1600500
+2026-10-17,INV700370,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,0,2310000
+2026-10-17,INV700370,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Original 100g,7,170000,1190000,35700,1154300
+2026-10-17,INV700371,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,0,1890000
+2026-10-17,INV700371,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Sukro,Sukro Original 100g,6,170000,1020000,30600,989400
+2026-10-17,INV700371,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,11,250000,2750000,0,2750000
+2026-10-18,INV700372,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-10-18,INV700372,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,11,160000,1760000,52800,1707200
+2026-10-18,INV700373,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-18,INV700373,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-18,INV700374,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-18,INV700374,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-18,INV700374,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-18,INV700375,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-18,INV700375,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-18,INV700375,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-18,INV700376,Jawa Barat,Bandung,D2015,Toko Bintang Harapan,Toko Kelontong,Bayu,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-18,INV700377,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,43200,1396800
+2026-10-18,INV700377,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,8,210000,1680000,50400,1629600
+2026-10-18,INV700377,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Original 100g,11,170000,1870000,0,1870000
+2026-10-18,INV700378,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,0,2100000
+2026-10-18,INV700379,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-10-18,INV700379,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-18,INV700379,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-18,INV700380,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-18,INV700380,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-10-18,INV700380,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-18,INV700381,Sumatera,Lampung,D2044,Warung Pelangi Bahagia,Warung,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-18,INV700382,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-18,INV700382,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,2,250000,500000,0,500000
+2026-10-18,INV700382,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-10-18,INV700383,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-18,INV700383,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-19,INV700384,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-20,INV700385,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-20,INV700385,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-10-20,INV700386,Jawa Barat,Bandung,D2015,Toko Bintang Harapan,Toko Kelontong,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-20,INV700387,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,0,1890000
+2026-10-20,INV700388,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-20,INV700389,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-20,INV700390,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,48600,1571400
+2026-10-20,INV700390,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-10-20,INV700390,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,9,240000,2160000,64800,2095200
+2026-10-20,INV700391,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-20,INV700391,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-20,INV700391,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-20,INV700392,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-10-20,INV700392,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Garing 150g,5,180000,900000,0,900000
+2026-10-20,INV700392,Kalimantan,Pontianak,D2046,Mini Sentosa Bahagia,Minimarket,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,5,240000,1200000,0,1200000
+2026-10-21,INV700393,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-21,INV700394,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-21,INV700395,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-10-21,INV700395,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-21,INV700396,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-21,INV700396,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Balado 100g,3,175000,525000,0,525000
+2026-10-21,INV700397,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Atom 250g,11,210000,2310000,69300,2240700
+2026-10-21,INV700397,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-10-21,INV700397,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,,Kacang Dua Kelinci,Kacang Kulit 200g,8,240000,1920000,0,1920000
+2026-10-21,INV700398,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-21,INV700398,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-21,INV700398,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-21,INV700399,Jawa Timur,Surabaya,D2031,Toko Cahaya Lestari,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,4,250000,1000000,0,1000000
+2026-10-21,INV700399,Jawa Timur,Surabaya,D2031,Toko Cahaya Lestari,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-10-21,INV700400,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-21,INV700400,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-21,INV700401,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-21,INV700401,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Tic Tac,Tic Tac Sapi Panggang 100g,5,160000,800000,0,800000
+2026-10-21,INV700401,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-22,INV700402,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-10-22,INV700402,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-22,INV700403,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,8,210000,1680000,50400,1629600
+2026-10-22,INV700403,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,0,2500000
+2026-10-22,INV700403,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,57600,1862400
+2026-10-22,INV700404,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-22,INV700404,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-22,INV700405,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Pilus,Pilus Pedas 95g,7,150000,1050000,0,1050000
+2026-10-22,INV700405,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,44100,1425900
+2026-10-22,INV700406,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-22,INV700406,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-10-22,INV700406,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-22,INV700407,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-22,INV700407,Jawa Tengah,Purwokerto,D2027,Toko Bahagia Maju,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Atom 250g,4,210000,840000,0,840000
+2026-10-22,INV700408,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,11,180000,1980000,0,1980000
+2026-10-22,INV700408,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-10-22,INV700409,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-22,INV700409,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-10-22,INV700410,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-22,INV700411,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-10-22,INV700411,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-22,INV700412,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-10-22,INV700412,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-22,INV700412,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-10-22,INV700413,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-22,INV700413,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-22,INV700413,Kalimantan,Samarinda,D2052,Warung Mandala Mitra,Warung,Nur,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-23,INV700414,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,4,250000,1000000,0,1000000
+2026-10-23,INV700414,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-23,INV700414,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-23,INV700415,Jabodetabek,Bogor,D2010,Mini Mitra Rejeki,Minimarket,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,5,250000,1250000,0,1250000
+2026-10-23,INV700416,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-23,INV700416,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-23,INV700417,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-23,INV700418,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-23,INV700419,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Balado 100g,8,175000,1400000,42000,1358000
+2026-10-23,INV700419,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Tos Tos,Tos Tos Jagung Bakar 140g,9,250000,2250000,67500,2182500
+2026-10-23,INV700420,Jawa Timur,Surabaya,D2030,Mini Rejeki Maju,Minimarket,Eko,Usagi,Usagi Snack Keju 60g,5,140000,700000,0,700000
+2026-10-23,INV700421,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-23,INV700422,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-23,INV700422,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-24,INV700423,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,6,160000,960000,28800,931200
+2026-10-24,INV700423,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,10,240000,2400000,0,2400000
+2026-10-24,INV700424,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Pilus,Pilus Pedas 95g,8,150000,1200000,36000,1164000
+2026-10-24,INV700424,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,8,160000,1280000,0,1280000
+2026-10-24,INV700425,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-24,INV700425,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-24,INV700425,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,4,160000,640000,0,640000
+2026-10-24,INV700426,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,10,180000,1800000,0,1800000
+2026-10-24,INV700426,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,0,1920000
+2026-10-24,INV700427,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-24,INV700427,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-24,INV700427,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-24,INV700428,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Garing 150g,11,180000,1980000,0,1980000
+2026-10-24,INV700428,Jawa Tengah,Purwokerto,D2025,Grosir Bahagia Sentosa,Grosir,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,11,240000,2640000,0,2640000
+2026-10-24,INV700429,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Kulit 200g,12,240000,2880000,0,2880000
+2026-10-24,INV700429,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Kacang Dua Kelinci,Kacang Garing 150g,9,180000,1620000,48600,1571400
+2026-10-24,INV700430,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-24,INV700430,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Tos Tos,Tos Tos Jagung Bakar 140g,1,250000,250000,0,250000
+2026-10-24,INV700430,Sumatera,Pekanbaru,D2040,Warung Bintang Sejahtera,Warung,Fitri,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-24,INV700431,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Kacang Dua Kelinci,Kacang Garing 150g,8,180000,1440000,0,1440000
+2026-10-24,INV700431,Sumatera,Lampung,D2041,Grosir Cahaya Maju,Grosir,Ahmad,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,0,1920000
+2026-10-24,INV700432,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-24,INV700432,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Usagi,Usagi Snack Keju 60g,1,140000,140000,0,140000
+2026-10-24,INV700432,Kalimantan,Pontianak,D2048,Warung Pelangi Harapan,Warung,Clara,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-25,INV700433,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-25,INV700434,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-25,INV700434,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-25,INV700435,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Balado 100g,9,175000,1575000,0,1575000
+2026-10-25,INV700435,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Sukro,Sukro Original 100g,11,170000,1870000,56100,1813900
+2026-10-25,INV700436,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-25,INV700436,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,4,250000,1000000,0,1000000
+2026-10-25,INV700436,Jabodetabek,Bogor,D2011,Toko Cahaya Mitra,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,4,140000,560000,0,560000
+2026-10-25,INV700437,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Sukro,Sukro Original 100g,10,170000,1700000,51000,1649000
+2026-10-25,INV700437,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,6,210000,1260000,37800,1222200
+2026-10-25,INV700437,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,10,250000,2500000,0,2500000
+2026-10-25,INV700438,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-25,INV700439,Sumatera,Pekanbaru,D2038,Mini Rejeki Cahaya,Minimarket,Fitri,Sukro,Sukro Original 100g,5,170000,850000,0,850000
+2026-10-25,INV700440,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-25,INV700440,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-25,INV700440,Kalimantan,Pontianak,D2047,Toko Bintang Cahaya,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-26,INV700441,Jabodetabek,Depok,D2005,Grosir Bintang Pelangi,Grosir,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,57600,1862400
+2026-10-26,INV700442,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-26,INV700442,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-26,INV700442,Jabodetabek,Depok,D2007,Toko Harapan Pelangi,Toko Kelontong,Nur,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-26,INV700443,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,63000,2037000
+2026-10-26,INV700443,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,10,180000,1800000,0,1800000
+2026-10-26,INV700444,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-26,INV700444,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-26,INV700445,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-10-26,INV700445,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Pilus,Pilus Pedas 95g,11,150000,1650000,0,1650000
+2026-10-26,INV700445,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Usagi,Usagi Snack Keju 60g,11,140000,1540000,0,1540000
+2026-10-26,INV700446,Jawa Timur,Kediri,D2033,Grosir Bintang Lestari,Grosir,Galih,Usagi,Usagi Snack Keju 60g,6,140000,840000,25200,814800
+2026-10-26,INV700447,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Sukro,Sukro Balado 100g,6,175000,1050000,0,1050000
+2026-10-26,INV700447,Sumatera,Pekanbaru,D2037,Grosir Bahagia Maju,Grosir,Fitri,Kacang Dua Kelinci,Kacang Kulit 200g,10,240000,2400000,0,2400000
+2026-10-27,INV700448,Jabodetabek,Jakarta Timur,D2002,Mini Sentosa Maju,Minimarket,Hana,Sukro,Sukro Original 100g,4,170000,680000,0,680000
+2026-10-27,INV700449,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-10-27,INV700449,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-27,INV700450,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Sukro,Sukro Original 100g,10,170000,1700000,0,1700000
+2026-10-27,INV700450,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Pilus,Pilus Pedas 95g,12,150000,1800000,54000,1746000
+2026-10-27,INV700450,Jawa Tengah,Semarang,D2021,Grosir Bahagia Pelangi,Grosir,Clara,Kacang Dua Kelinci,Kacang Garing 150g,8,180000,1440000,43200,1396800
+2026-10-27,INV700451,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Pilus,Pilus Pedas 95g,9,150000,1350000,40500,1309500
+2026-10-27,INV700451,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,12,160000,1920000,57600,1862400
+2026-10-27,INV700452,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-28,INV700453,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-10-28,INV700453,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-28,INV700453,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-28,INV700454,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-28,INV700454,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-28,INV700455,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tic Tac,Tic Tac Sapi Panggang 100g,1,160000,160000,0,160000
+2026-10-28,INV700455,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,1,210000,210000,0,210000
+2026-10-28,INV700456,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Sukro,Sukro Original 100g,3,170000,510000,0,510000
+2026-10-28,INV700457,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-28,INV700457,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-28,INV700457,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,1,240000,240000,0,240000
+2026-10-28,INV700458,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Pilus,Pilus Pedas 95g,1,150000,150000,0,150000
+2026-10-28,INV700459,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Sukro,Sukro Balado 100g,2,175000,350000,0,350000
+2026-10-28,INV700459,Jawa Timur,Surabaya,D2032,Warung Mitra Maju,Warung,Eko,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-28,INV700460,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-28,INV700460,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Pilus,Pilus Pedas 95g,4,150000,600000,0,600000
+2026-10-29,INV700461,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-29,INV700462,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Tos Tos,Tos Tos Jagung Bakar 140g,3,250000,750000,0,750000
+2026-10-29,INV700462,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-29,INV700462,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-29,INV700463,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-29,INV700463,Jawa Barat,Tasikmalaya,D2019,Toko Mitra Harapan,Toko Kelontong,Eko,Kacang Dua Kelinci,Kacang Atom 250g,3,210000,630000,0,630000
+2026-10-29,INV700464,Jawa Timur,Kediri,D2036,Warung Mitra Bintang,Warung,Galih,Usagi,Usagi Snack Keju 60g,3,140000,420000,0,420000
+2026-10-30,INV700465,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Atom 250g,7,210000,1470000,0,1470000
+2026-10-30,INV700465,Jabodetabek,Jakarta Timur,D2001,Grosir Harapan Cahaya,Grosir,Hana,Kacang Dua Kelinci,Kacang Kulit 200g,6,240000,1440000,0,1440000
+2026-10-30,INV700466,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-30,INV700466,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Sukro,Sukro Balado 100g,4,175000,700000,0,700000
+2026-10-30,INV700466,Jabodetabek,Depok,D2006,Mini Harapan Sejahtera,Minimarket,Nur,Pilus,Pilus Pedas 95g,5,150000,750000,0,750000
+2026-10-30,INV700467,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Kacang Dua Kelinci,Kacang Atom 250g,2,210000,420000,0,420000
+2026-10-30,INV700468,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Pilus,Pilus Pedas 95g,6,150000,900000,0,900000
+2026-10-30,INV700468,Jawa Barat,Tasikmalaya,D2017,Grosir Sejahtera Cahaya,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,10,210000,2100000,63000,2037000
+2026-10-30,INV700469,Jawa Barat,Tasikmalaya,D2018,Mini Harapan Sejahtera,Minimarket,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,2,160000,320000,0,320000
+2026-10-30,INV700470,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Garing 150g,2,180000,360000,0,360000
+2026-10-30,INV700470,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-30,INV700470,Jawa Barat,Tasikmalaya,D2020,Warung Rejeki Cahaya,Warung,Eko,Sukro,Sukro Original 100g,1,170000,170000,0,170000
+2026-10-30,INV700471,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Garing 150g,3,180000,540000,0,540000
+2026-10-30,INV700471,Jawa Tengah,Semarang,D2023,Toko Pelangi Mandala,Toko Kelontong,Clara,Kacang Dua Kelinci,Kacang Kulit 200g,4,240000,960000,0,960000
+2026-10-30,INV700472,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-30,INV700472,Sumatera,Lampung,D2042,Mini Sejahtera Cahaya,Minimarket,Ahmad,Kacang Dua Kelinci,Kacang Atom 250g,5,210000,1050000,0,1050000
+2026-10-30,INV700473,Kalimantan,Samarinda,D2050,Mini Sentosa Lestari,Minimarket,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-31,INV700474,Jabodetabek,Jakarta Timur,D2003,Toko Cahaya Bahagia,Toko Kelontong,Hana,Sukro,Sukro Balado 100g,1,175000,175000,0,175000
+2026-10-31,INV700475,Jabodetabek,Jakarta Timur,D2004,Warung Bintang Cahaya,Warung,Hana,Tic Tac,Tic Tac Sapi Panggang 100g,3,160000,480000,0,480000
+2026-10-31,INV700476,Jabodetabek,Depok,D2008,Warung Sejahtera Cahaya,Warung,Nur,Pilus,Pilus Pedas 95g,3,150000,450000,0,450000
+2026-10-31,INV700477,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,12,210000,2520000,75600,2444400
+2026-10-31,INV700477,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Pilus,Pilus Pedas 95g,8,150000,1200000,36000,1164000
+2026-10-31,INV700477,Jabodetabek,Bogor,D2009,Grosir Sentosa Bintang,Grosir,Eko,Tic Tac,Tic Tac Sapi Panggang 100g,9,160000,1440000,0,1440000
+2026-10-31,INV700478,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Garing 150g,1,180000,180000,0,180000
+2026-10-31,INV700478,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Usagi,Usagi Snack Keju 60g,2,140000,280000,0,280000
+2026-10-31,INV700478,Jawa Barat,Bandung,D2016,Warung Mitra Mandala,Warung,Bayu,Kacang Dua Kelinci,Kacang Kulit 200g,2,240000,480000,0,480000
+2026-10-31,INV700479,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Kacang Dua Kelinci,Kacang Kulit 200g,3,240000,720000,0,720000
+2026-10-31,INV700479,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Sukro,Sukro Original 100g,2,170000,340000,0,340000
+2026-10-31,INV700479,Jawa Tengah,Purwokerto,D2028,Warung Mitra Pelangi,Warung,Nur,Pilus,Pilus Pedas 95g,2,150000,300000,0,300000
+2026-10-31,INV700480,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Garing 150g,6,180000,1080000,0,1080000
+2026-10-31,INV700480,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Pilus,Pilus Pedas 95g,9,150000,1350000,0,1350000
+2026-10-31,INV700480,Jawa Timur,Surabaya,D2029,Grosir Pelangi Lestari,Grosir,Eko,Kacang Dua Kelinci,Kacang Atom 250g,9,210000,1890000,56700,1833300

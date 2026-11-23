@@ -1,0 +1,154 @@
+/*
+ * Design tokens. One warm paper neutral for every surface (the colour of an invoice book), one ink-blue hue for
+ * actions, the focal figure and the chart marks (ballpoint on a faktur). Depth is borders only: no shadows.
+ *
+ * Contrast checked 2026-11-23 (WCAG 2 ratio, dataviz validator): --ink-3 >= 5.0:1 on every surface in both modes;
+ * --accent 6.0:1 (light) / 7.6:1 (dark) on paper; the two bar steps pass the ordinal ramp check in both modes
+ * (light end 2.05:1 light, 2.74:1 dark; values stay readable through labels and the table view).
+ */
+:root {
+  color-scheme: light;
+
+  /* Surfaces: paper (page) -> sheet (cards) -> raised (tooltip). Well = inset (tracks, table heads). */
+  --paper: #f4f3ee;
+  --sheet: #fcfcfa;
+  --raised: #ffffff;
+  --well: #efeee8;
+
+  /* Rules: hairlines that disappear until you look for structure. */
+  --rule: rgba(36, 32, 20, 0.12);
+  --rule-soft: rgba(36, 32, 20, 0.07);
+  --rule-strong: rgba(36, 32, 20, 0.22);
+
+  /* Ink: primary, secondary, tertiary, muted. */
+  --ink: #141412;
+  --ink-2: #4a4945;
+  --ink-3: #66645e;
+  --ink-4: #8f8c84;
+
+  /* The one accent: ballpoint ink-blue. */
+  --accent: #1c5cab;
+  --action: #1c5cab;
+  --action-hover: #184f95;
+  --on-action: #ffffff;
+  --accent-wash: #e3ecf8;
+  --focus: #1c5cab;
+
+  /* Chart: two steps of the accent hue, an ordered pair (first month light, last month dark). */
+  --bar-first: #86b6ef;
+  --bar-last: #256abf;
+  --grid: #e6e5de;
+  --axis: #c9c7be;
+
+  /* Status: only for flagged outlets (always next to a number). */
+  --critical: #d03b3b;
+  --serious: #ec835a;
+  --neutral-fill: #8f8c84;
+
+  /* Telegram preview (the signature): a blue-grey wall and an outgoing bubble. */
+  --wall: #e5eaef;
+  --bubble: #dcebfb;
+  --bubble-meta: #4f6275;
+  --tick: #1c5cab;
+
+  --scrim: rgba(244, 243, 238, 0.9);
+
+  /* Type: IBM Plex, a corporate-report face with real tabular figures. Scale ratio 1.25 from 14px. */
+  --font-sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+  --t-xs: 11px;
+  --t-sm: 12px;
+  --t-base: 14px;
+  --t-md: 16px;
+  --t-lg: 18px;
+  --t-xl: 22px;
+  --t-2xl: 28px;
+  --t-hero: 56px;
+
+  /* Space: 4px base. */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+
+  /* Radius: controls 4, sheets 8, bubble 12. Segmented track = 4 + 2px inset = 6. */
+  --r-sm: 4px;
+  --r-seg: 6px;
+  --r-md: 8px;
+  --r-lg: 12px;
+
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --paper: #111110;
+    --sheet: #1a1a19;
+    --raised: #252523;
+    --well: #0e0e0d;
+    --rule: rgba(255, 255, 255, 0.09);
+    --rule-soft: rgba(255, 255, 255, 0.05);
+    --rule-strong: rgba(255, 255, 255, 0.17);
+    --ink: #f0efec;
+    --ink-2: #c3c2b7;
+    --ink-3: #9c9b93;
+    --ink-4: #75746d;
+    --accent: #6da7ec;
+    --action: #5598e7;
+    --action-hover: #6da7ec;
+    --on-action: #0b0b0b;
+    --accent-wash: #16263a;
+    --focus: #6da7ec;
+    --bar-first: #1f5fae;
+    --bar-last: #6da7ec;
+    --grid: #262624;
+    --axis: #3a3a37;
+    --critical: #e66767;
+    --serious: #ec835a;
+    --neutral-fill: #75746d;
+    --wall: #10151b;
+    --bubble: #1b3352;
+    --bubble-meta: #a9bdd3;
+    --tick: #6da7ec;
+    --scrim: rgba(17, 17, 16, 0.9);
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --paper: #111110;
+  --sheet: #1a1a19;
+  --raised: #252523;
+  --well: #0e0e0d;
+  --rule: rgba(255, 255, 255, 0.09);
+  --rule-soft: rgba(255, 255, 255, 0.05);
+  --rule-strong: rgba(255, 255, 255, 0.17);
+  --ink: #f0efec;
+  --ink-2: #c3c2b7;
+  --ink-3: #9c9b93;
+  --ink-4: #75746d;
+  --accent: #6da7ec;
+  --action: #5598e7;
+  --action-hover: #6da7ec;
+  --on-action: #0b0b0b;
+  --accent-wash: #16263a;
+  --focus: #6da7ec;
+  --bar-first: #1f5fae;
+  --bar-last: #6da7ec;
+  --grid: #262624;
+  --axis: #3a3a37;
+  --critical: #e66767;
+  --serious: #ec835a;
+  --neutral-fill: #75746d;
+  --wall: #10151b;
+  --bubble: #1b3352;
+  --bubble-meta: #a9bdd3;
+  --tick: #6da7ec;
+  --scrim: rgba(17, 17, 16, 0.9);
+}

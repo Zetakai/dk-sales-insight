@@ -1,0 +1,34 @@
+{
+  "name": "dk-sales-insight",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sales by region and brand, the 5 weakest outlets, and a one-paragraph Telegram summary, from a sales CSV export.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "demo:data": "node scripts/make-demo.mjs",
+    "demo:fixture": "python3 scripts/reference_insights.py data/demo.csv src/lib/fixture.ts"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.1"
+  }
+}
