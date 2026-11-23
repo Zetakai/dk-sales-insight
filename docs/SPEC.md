@@ -4,13 +4,13 @@ The build test (Dua Kelinci, AI Builder): "ship a small web app that shows sales
 weakest outlets, and writes a one-paragraph summary a sales manager could read in Telegram." They run it on their own
 machine from the repo and a short README.
 
-Data: the company's export goes in `data/sales.csv`, which is never committed (`.gitignore`). The repo ships
-`data/demo.csv` instead: synthetic outlets and figures with the same columns and the same kinds of problems, written
-by `scripts/make-demo.mjs`, so a fresh clone runs and every test has data.
+Data: `data/sales.csv` is the sample export from the brief, and the page opens on it. `data/demo.csv` holds
+synthetic outlets and figures with the same columns and the same kinds of problems, written by
+`scripts/make-demo.mjs`; the page falls back to it when `sales.csv` is absent, and the tests use both.
 
 Contract: `src/lib/types.ts` (types) and `src/lib/index.ts` (public functions). Reference result for the demo:
-`src/lib/fixture.ts` (`FIXTURE`), written by `scripts/reference_insights.py`, an independent Python implementation
-of this spec. The two implementations also agreed on every number of the real export.
+`src/lib/fixture.ts` (`FIXTURE`), and for the sample `src/lib/fixture-sales.ts`, both written by
+`scripts/reference_insights.py`, an independent Python implementation of this spec.
 
 ## 1. Data and what is wrong with it (found in the real export, 2026-11-23)
 
@@ -52,8 +52,9 @@ upload an export from Excel. Cartons and rupiah must be whole numbers (`1.050` i
 - `biggestDrops` = among outlets with firstMonthIdr > 0, the 5 lowest lastMonthIdr / firstMonthIdr.
 - `outlets` = every outlet, sorted like `weakest`.
 
-Acceptance: `analyze(demoCsv)` deep-equals `FIXTURE` (numbers exactly; ratios as rounded above). When
-`data/sales.csv` is present, its result must add up (regions, brands and outlets each sum to the total).
+Acceptance: `analyze(demoCsv)` deep-equals `FIXTURE` and `analyze(salesCsv)` deep-equals the sample's fixture (numbers
+exactly; ratios as rounded above). Any export in `data/sales.csv` must add up (regions, brands and outlets each sum
+to the total).
 
 ## 3. Telegram summary
 
@@ -82,7 +83,7 @@ CSV" button and drag-and-drop replace it with another export (same columns) with
 invalid rows, never a blank page.
 
 One language switch (Bahasa Indonesia default, English) covers the whole page, remembered per browser; every
-string lives in `src/ui/i18n.ts`. The production build never bundles `data/sales.csv` (dev server only).
+string lives in `src/ui/i18n.ts`.
 
 Sections, in this order:
 1. Header: title, the period ("1 Sep – 31 Oct 2026"), the data source (sample or the uploaded file name), Load CSV.

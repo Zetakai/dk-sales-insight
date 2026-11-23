@@ -3,19 +3,14 @@ import { analyze, CsvFileError, telegramSummary } from '../lib';
 import type { Insights, Lang, SummaryLayout } from '../lib';
 
 /**
- * Default data: data/sales.csv when it is on this machine, else data/demo.csv (synthetic). Lazy globs, so a missing
- * sales.csv never breaks the build and each file is its own chunk, loaded only when it is the one shown.
- *
- * The company's own export is read by the dev server only. A production build (npm run build) never bundles it, so
- * a dist/ folder can be shared or hosted without carrying the sales data; it opens on the demo, and the real file
- * is loaded with Load CSV.
+ * Default data: data/sales.csv (the sample export from the brief), else data/demo.csv (synthetic). Lazy glob, so a
+ * missing sales.csv never breaks the build and each file is its own chunk, loaded only when it is the one shown.
+ * Replace data/sales.csv with another export (same columns) to open on that, or load one with Load CSV.
  */
-type Loaders = Record<string, () => Promise<string>>;
-const DEMO = import.meta.glob('../../data/demo.csv', { query: '?raw', import: 'default' }) as Loaders;
-const SALES = (
-  import.meta.env.DEV ? import.meta.glob('../../data/sales.csv', { query: '?raw', import: 'default' }) : {}
-) as Loaders;
-const DATA: Loaders = { ...DEMO, ...SALES };
+const DATA = import.meta.glob(['../../data/sales.csv', '../../data/demo.csv'], {
+  query: '?raw',
+  import: 'default',
+}) as Record<string, () => Promise<string>>;
 
 export type Source = { kind: 'bundled' | 'demo' | 'file' | 'none'; name: string };
 

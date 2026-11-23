@@ -3,7 +3,9 @@
 A small web app for a sales export: net sales by region and brand, the 5 weakest outlets, and a one-paragraph
 summary a sales manager can paste into Telegram. Indonesian and English, light and dark.
 
-![The dashboard on the synthetic demo data](docs/screenshot.jpg)
+Live: https://dk-sales-insight.pages.dev
+
+![The dashboard on the sample data from the brief](docs/screenshot.jpg)
 
 ## Run it
 
@@ -13,18 +15,16 @@ Needs Node.js 20.19 or newer.
 git clone https://github.com/Zetakai/dk-sales-insight.git
 cd dk-sales-insight
 npm install
-cp /path/to/your/sales.csv data/sales.csv   # optional: without it the app opens on synthetic demo data
 npm run dev
 ```
 
-Open http://localhost:5173. The header says which file is shown. **Muat CSV / Load CSV** (or dropping a file on the
-page) loads any other export with the same columns, without a restart.
-
-`data/sales.csv` is in `.gitignore`, so the company's data never ends up in the repo. `npm run build` leaves it out of
-the bundle too: a built copy opens on the demo and reads the real file through Load CSV.
+Open http://localhost:5173. It opens on `data/sales.csv`, the sample export from the brief; put another export with
+the same columns in its place to open on that. **Muat CSV / Load CSV** (or dropping a file on the page) loads any
+export without a restart; the header says which file is shown. A loaded file is read in the browser and never
+uploaded anywhere.
 
 ```bash
-npm test            # 64 tests: CSV parsing, cleaning, metrics, the summary
+npm test            # 65 tests: CSV parsing, cleaning, metrics, the summary
 npm run typecheck
 npm run build       # static site in dist/
 ```
@@ -64,12 +64,13 @@ browser, so the data never leaves the machine.
 src/lib/        data layer, no React: csv.ts → clean.ts → metrics.ts → summary.ts (types.ts is the contract)
 src/ui/         components; every visible string is in i18n.ts
 docs/SPEC.md    the exact definitions of every number
+data/sales.csv  the sample export from the brief (1,891 lines, Sep–Oct 2026)
 data/demo.csv   synthetic data (scripts/make-demo.mjs) with the same columns and the same kinds of problems
 ```
 
 **Two independent implementations agree on every number.** `scripts/reference_insights.py` computes the same
-insights in plain Python from the spec, and the tests compare the app's result with it field by field. On the real
-export they matched as well.
+insights in plain Python from the spec, and the tests compare the app's result with it field by field, on both the
+sample from the brief and the synthetic demo.
 
 I built it with Claude Code as a small team of AI agents: I wrote the spec and the data contract first, then a data
 agent (`src/lib`, with tests) and a UI agent (`src/ui`) worked in parallel on separate folders, a third agent reviewed

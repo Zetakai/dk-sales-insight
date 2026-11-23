@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
 An independent implementation of docs/SPEC.md sections 1-2, in Python with no dependencies, so the TypeScript data
-layer is checked against something it does not share code with. It writes src/lib/fixture.ts (FIXTURE), which the
-Vitest suite deep-compares with analyze(data/demo.csv).
+layer is checked against something it does not share code with. The Vitest suite deep-compares its output with
+analyze() on the same file:
 
     python3 scripts/reference_insights.py data/demo.csv src/lib/fixture.ts
+    python3 scripts/reference_insights.py data/sales.csv src/lib/fixture-sales.ts
 
 Run it again after changing the demo data or a metric definition. Two implementations agreeing on every number is
 the point; when they disagree, read the spec before changing either.
@@ -151,7 +152,7 @@ insights = dict(
 
 with open(out, 'w', encoding='utf-8') as f:
     f.write("import type { Insights } from './types';\n\n")
-    f.write('/**\n * Reference result for data/demo.csv (synthetic), written by scripts/reference_insights.py: an independent\n')
+    f.write(f'/**\n * Reference result for {src}, written by scripts/reference_insights.py: an independent\n')
     f.write(' * Python implementation of docs/SPEC.md. Do not edit by hand. Ratios rounded: share and peerIndex to 4 decimals,\n')
     f.write(' * percentages to 1 decimal.\n */\n')
     f.write('export const FIXTURE: Insights = ' + json.dumps(insights, ensure_ascii=False, indent=2) + ';\n')

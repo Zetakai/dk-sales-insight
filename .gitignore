@@ -3,6 +3,3 @@ dist
 .DS_Store
 *.log
 .vitest
-
-# The company's own export stays on the machine that runs the app; the repo ships synthetic data/demo.csv.
-data/sales.csv

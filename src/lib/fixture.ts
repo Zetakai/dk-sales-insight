@@ -1,7 +1,7 @@
 import type { Insights } from './types';
 
 /**
- * Reference result for data/demo.csv (synthetic), written by scripts/reference_insights.py: an independent
+ * Reference result for data/demo.csv, written by scripts/reference_insights.py: an independent
  * Python implementation of docs/SPEC.md. Do not edit by hand. Ratios rounded: share and peerIndex to 4 decimals,
  * percentages to 1 decimal.
  */

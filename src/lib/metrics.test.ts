@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { REQUIRED_COLUMNS } from './csv';
 import { FIXTURE } from './fixture';
+import { FIXTURE as SALES_FIXTURE } from './fixture-sales';
 import { analyze, round } from './metrics';
 import type { RawRow } from './types';
 
@@ -41,10 +42,16 @@ describe('analyze(sample)', () => {
   });
 });
 
-// A real export dropped in as data/sales.csv (never committed) gets the same invariants checked, so a new file
-// is tested without anyone writing a fixture for it.
+// data/sales.csv is the sample export from the brief. It must match the Python reference exactly; and the invariants
+// below also hold for any other export dropped in its place, without anyone writing a fixture for it.
 const real = new URL('../../data/sales.csv', import.meta.url);
 describe.skipIf(!existsSync(real))('analyze(data/sales.csv)', () => {
+  it('deep-equals the Python reference (fixture-sales.ts) while it is the sample from the brief', () => {
+    const i = analyze(readFileSync(real, 'utf8'));
+    if (i.cleaning.rowsRead !== SALES_FIXTURE.cleaning.rowsRead) return; // someone replaced the file: invariants only
+    expect(i).toEqual(SALES_FIXTURE);
+  });
+
   it('adds up: regions, brands and outlets each sum to the total; 5 weakest', () => {
     const i = analyze(readFileSync(real, 'utf8'));
     const sum = (xs: { netIdr: number }[]) => xs.reduce((s, x) => s + x.netIdr, 0);
