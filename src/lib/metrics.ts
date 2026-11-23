@@ -1,16 +1,22 @@
 import { cleanRows } from './clean';
 import { readRows } from './csv';
-import type { Breakdown, CleaningReport, Insights, OutletScore, SaleLine } from './types';
+import type { Breakdown, CleaningReport, Dataset, Insights, OutletScore, SaleLine } from './types';
 
 /**
  * Metrics over cleaned lines, exactly as docs/SPEC.md section 2 defines them. FIXTURE (src/lib/fixture.ts) is the
  * reference result for the sample; the tests hold this file to it.
  */
 
-/** Parse, clean and measure one CSV export. Throws only when the file itself is unusable (see readRows). */
-export function analyze(csvText: string): Insights {
+/** Parse and clean one CSV export. Throws only when the file itself is unusable (see readRows). */
+export function load(csvText: string): Dataset {
   const { lines, report } = cleanRows(readRows(csvText));
-  return computeInsights(lines, report);
+  return { lines, cleaning: report };
+}
+
+/** Parse, clean and measure one CSV export, for the whole file or one region. */
+export function analyze(csvText: string, region: string | null = null): Insights {
+  const { lines, cleaning } = load(csvText);
+  return computeInsights(lines, cleaning, region);
 }
 
 /**
@@ -166,16 +172,25 @@ function scoreOutlets(lines: SaleLine[], months: string[]): OutletScore[] {
     .sort(weakestFirst);
 }
 
-/** Every figure on the dashboard, from cleaned lines. No usable lines gives an all-zero result, never a throw. */
-export function computeInsights(lines: SaleLine[], cleaning: CleaningReport): Insights {
-  const months = [...new Set(lines.map((l) => l.month))].sort();
+/**
+ * Every figure on the dashboard, from cleaned lines: for the whole file, or for one region (`region`). No usable
+ * lines gives an all-zero result, never a throw.
+ *
+ * With a region, every total and breakdown counts that region's lines only, but two things stay company-wide: the
+ * months (so a region is compared over the same months as the company) and each outlet's peer median (so "weak"
+ * means the same thing in every region).
+ */
+export function computeInsights(allLines: SaleLine[], cleaning: CleaningReport, region: string | null = null): Insights {
+  const months = [...new Set(allLines.map((l) => l.month))].sort();
   const first = months[0];
   const last = months[months.length - 1];
+  const lines = region === null ? allLines : allLines.filter((l) => l.region === region);
   const dates = lines.map((l) => l.date).sort();
 
   const netIdr = sum(lines.map((l) => l.netIdr));
   const byMonth = netByMonth(lines, months);
-  const outlets = scoreOutlets(lines, months);
+  const scored = scoreOutlets(allLines, months);
+  const outlets = region === null ? scored : scored.filter((o) => o.region === region);
 
   // Biggest drops: only an outlet that sold in the first month can drop. The ratio is sorted unrounded.
   const biggestDrops = outlets
@@ -186,6 +201,7 @@ export function computeInsights(lines: SaleLine[], cleaning: CleaningReport): In
     .map(({ o }) => o);
 
   return {
+    scope: { region },
     period: { from: dates[0] ?? '', to: dates[dates.length - 1] ?? '', months },
     totals: {
       netIdr,
@@ -200,6 +216,7 @@ export function computeInsights(lines: SaleLine[], cleaning: CleaningReport): In
     },
     byRegion: breakdown(lines, (l) => l.region, months, netIdr, true),
     byBrand: breakdown(lines, (l) => l.brand, months, netIdr, false),
+    byBranch: breakdown(lines, (l) => l.branch, months, netIdr, false),
     weakest: outlets.slice(0, 5),
     biggestDrops,
     outlets,

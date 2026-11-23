@@ -96,7 +96,15 @@ export type OutletScore = {
   peerMedianIdr: number;
 };
 
+/** A cleaned file, ready to be measured for the whole company or for one region. */
+export type Dataset = { lines: SaleLine[]; cleaning: CleaningReport };
+
 export type Insights = {
+  /**
+   * What the figures cover: the whole file (region null) or one region. Months always come from the whole file, so
+   * a region is compared over the same months as the company.
+   */
+  scope: { region: string | null };
   period: { from: string; to: string; months: string[] };
   totals: {
     netIdr: number;
@@ -111,7 +119,12 @@ export type Insights = {
   };
   byRegion: Breakdown[]; // sorted by netIdr, high to low
   byBrand: Breakdown[]; // sorted by netIdr, high to low
-  /** The 5 weakest outlets: lowest peerIndex (sales vs the median of their outlet type), weakest first. */
+  byBranch: Breakdown[]; // within the scope, sorted by netIdr, high to low (no driver)
+  /**
+   * The 5 weakest outlets: lowest peerIndex (sales vs the median of their outlet type), weakest first. The median is
+   * always the whole file's, also when the scope is one region: a region has too few outlets of each type for a
+   * fair yardstick of its own.
+   */
   weakest: OutletScore[];
   /** The 5 biggest drops, last month vs first month (only outlets that sold in the first month), worst first. */
   biggestDrops: OutletScore[];

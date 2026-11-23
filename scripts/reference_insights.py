@@ -6,6 +6,10 @@ analyze() on the same file:
 
     python3 scripts/reference_insights.py data/demo.csv src/lib/fixture.ts
     python3 scripts/reference_insights.py data/sales.csv src/lib/fixture-sales.ts
+    python3 scripts/reference_insights.py data/demo.csv src/lib/fixture-region.ts "Jawa Tengah"
+
+The optional third argument scopes the figures to one region: totals and breakdowns count that region's lines;
+the months and each outlet's peer median stay company-wide (docs/SPEC.md section 2).
 
 Run it again after changing the demo data or a metric definition. Two implementations agreeing on every number is
 the point; when they disagree, read the spec before changing either.
@@ -89,6 +93,11 @@ cleaning = dict(
     invalid=[], blankSalesman=blank,
 )
 
+# Scope: one region, or the whole file. Months (above) and peer medians (below) stay company-wide.
+region = sys.argv[3] if len(sys.argv) > 3 else None
+all_lines = lines
+lines = [l for l in all_lines if region is None or l['region'] == region]
+
 tot = sum(l['netIdr'] for l in lines)
 bm = collections.Counter()
 for l in lines:
@@ -123,7 +132,7 @@ def breakdown(dim, driver=False):
 
 
 by_outlet = collections.defaultdict(list)
-for l in lines:
+for l in all_lines:
     by_outlet[l['outletId']].append(l)
 outlets = []
 for oid, ls in by_outlet.items():
@@ -142,17 +151,20 @@ for o in outlets:
     o['peerMedianIdr'] = median[o['outletType']]
     o['peerIndex'] = round(o['netIdr'] / median[o['outletType']], 4)
 outlets.sort(key=lambda o: (o['peerIndex'], o['netIdr']))
+outlets = [o for o in outlets if region is None or o['region'] == region]
 drops = sorted([o for o in outlets if o['firstMonthIdr'] > 0], key=lambda o: o['lastMonthIdr'] / o['firstMonthIdr'])[:5]
 
 insights = dict(
+    scope={'region': region},
     period={'from': min(l['date'] for l in lines), 'to': max(l['date'] for l in lines), 'months': months},
-    totals=totals, byRegion=breakdown('region', True), byBrand=breakdown('brand'),
+    totals=totals, byRegion=breakdown('region', True), byBrand=breakdown('brand'), byBranch=breakdown('branch'),
     weakest=outlets[:5], biggestDrops=drops, outlets=outlets, cleaning=cleaning,
 )
 
 with open(out, 'w', encoding='utf-8') as f:
     f.write("import type { Insights } from './types';\n\n")
-    f.write(f'/**\n * Reference result for {src}, written by scripts/reference_insights.py: an independent\n')
+    where = f' (region {region})' if region else ''
+    f.write(f'/**\n * Reference result for {src}{where}, written by scripts/reference_insights.py: an independent\n')
     f.write(' * Python implementation of docs/SPEC.md. Do not edit by hand. Ratios rounded: share and peerIndex to 4 decimals,\n')
     f.write(' * percentages to 1 decimal.\n */\n')
     f.write('export const FIXTURE: Insights = ' + json.dumps(insights, ensure_ascii=False, indent=2) + ';\n')

@@ -51,9 +51,14 @@ upload an export from Excel. Cartons and rupiah must be whole numbers (`1.050` i
   (On this sample both rules pick the same 5.)
 - `biggestDrops` = among outlets with firstMonthIdr > 0, the 5 lowest lastMonthIdr / firstMonthIdr.
 - `outlets` = every outlet, sorted like `weakest`.
+- `byBranch`: net per branch within the scope, like `byBrand` (no driver).
+- Scope (`computeInsights(lines, cleaning, region)`, the page's Wilayah filter): totals, breakdowns, period dates and
+  the outlet lists count that region's lines only. Two things stay company-wide: the months (a region is compared
+  over the same months) and each outlet's peer median (a region has too few outlets per type for a fair yardstick;
+  "weak" must mean the same thing everywhere). `cleaning` is always the whole file's. `scope.region` says which.
 
-Acceptance: `analyze(demoCsv)` deep-equals `FIXTURE` and `analyze(salesCsv)` deep-equals the sample's fixture (numbers
-exactly; ratios as rounded above). Any export in `data/sales.csv` must add up (regions, brands and outlets each sum
+Acceptance: `analyze(demoCsv)` deep-equals `FIXTURE`, `analyze(salesCsv)` the sample's fixture and
+`analyze(demoCsv, 'Jawa Tengah')` `fixture-region.ts` (numbers exactly; ratios as rounded above). Any export in `data/sales.csv` must add up (regions, brands and outlets each sum
 to the total).
 
 ## 3. Telegram summary
@@ -69,7 +74,9 @@ In this order, each only when it says something:
    minggu ini" / "prioritise visits this week").
 5. One short data note when cleaning changed anything (duplicates removed, return deducted, spellings unified).
 
-It must read like a sales manager wrote it: short clauses, no "This summary…".
+It must read like a sales manager wrote it: short clauses, no "This summary…". For one region it names the region
+first ("Penjualan Jawa Timur 1 Sep–31 Okt 2026: …"), compares that region's branches instead of regions, and leaves
+out the data note (it is about the whole file).
 
 `telegramSummary(insights, lang, 'lines')` gives the same words laid out for a phone: the headline, then the region
 and brand lines, then the outlets as a numbered list with the action under them, then the data note, with a blank
@@ -89,6 +96,9 @@ Layout: one column below 1200px; from 1200px a 12-column grid, fluid up to 2560p
 (6 + 6), weakest outlets | Telegram summary (8 + 4), data quality full width. Charts size to their own sheet
 (container queries). Each chart's subtitle is its takeaway (largest row, and the one that moved most, by the same
 rule as the summary), not a description of the chart.
+
+A Wilayah (region) filter above the headline scopes every section except Data quality; the region chart becomes a
+branch chart for that region.
 
 Sections, in this order:
 1. Header: title, the period ("1 Sep – 31 Oct 2026"), the data source (sample or the uploaded file name), Load CSV.

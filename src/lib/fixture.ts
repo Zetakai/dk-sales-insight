@@ -6,6 +6,9 @@ import type { Insights } from './types';
  * percentages to 1 decimal.
  */
 export const FIXTURE: Insights = {
+  "scope": {
+    "region": null
+  },
   "period": {
     "from": "2026-09-01",
     "to": "2026-10-31",
@@ -180,6 +183,138 @@ export const FIXTURE: Insights = {
         "2026-10": 24144400
       },
       "changePct": 24.5
+    }
+  ],
+  "byBranch": [
+    {
+      "key": "Bogor",
+      "netIdr": 117968400,
+      "share": 0.1451,
+      "byMonth": {
+        "2026-09": 61628700,
+        "2026-10": 56339700
+      },
+      "changePct": -8.6
+    },
+    {
+      "key": "Jakarta Timur",
+      "netIdr": 100058700,
+      "share": 0.1231,
+      "byMonth": {
+        "2026-09": 54840700,
+        "2026-10": 45218000
+      },
+      "changePct": -17.5
+    },
+    {
+      "key": "Depok",
+      "netIdr": 96779250,
+      "share": 0.119,
+      "byMonth": {
+        "2026-09": 50158350,
+        "2026-10": 46620900
+      },
+      "changePct": -7.1
+    },
+    {
+      "key": "Tasikmalaya",
+      "netIdr": 76324600,
+      "share": 0.0939,
+      "byMonth": {
+        "2026-09": 44342100,
+        "2026-10": 31982500
+      },
+      "changePct": -27.9
+    },
+    {
+      "key": "Purwokerto",
+      "netIdr": 63169000,
+      "share": 0.0777,
+      "byMonth": {
+        "2026-09": 32685300,
+        "2026-10": 30483700
+      },
+      "changePct": -6.7
+    },
+    {
+      "key": "Lampung",
+      "netIdr": 62735600,
+      "share": 0.0772,
+      "byMonth": {
+        "2026-09": 35119600,
+        "2026-10": 27616000
+      },
+      "changePct": -21.4
+    },
+    {
+      "key": "Surabaya",
+      "netIdr": 61344200,
+      "share": 0.0755,
+      "byMonth": {
+        "2026-09": 23727400,
+        "2026-10": 37616800
+      },
+      "changePct": 58.5
+    },
+    {
+      "key": "Kediri",
+      "netIdr": 51637400,
+      "share": 0.0635,
+      "byMonth": {
+        "2026-09": 23641000,
+        "2026-10": 27996400
+      },
+      "changePct": 18.4
+    },
+    {
+      "key": "Semarang",
+      "netIdr": 47498600,
+      "share": 0.0584,
+      "byMonth": {
+        "2026-09": 10330900,
+        "2026-10": 37167700
+      },
+      "changePct": 259.8
+    },
+    {
+      "key": "Pekanbaru",
+      "netIdr": 42281200,
+      "share": 0.052,
+      "byMonth": {
+        "2026-09": 17316200,
+        "2026-10": 24965000
+      },
+      "changePct": 44.2
+    },
+    {
+      "key": "Bandung",
+      "netIdr": 38964850,
+      "share": 0.0479,
+      "byMonth": {
+        "2026-09": 21672400,
+        "2026-10": 17292450
+      },
+      "changePct": -20.2
+    },
+    {
+      "key": "Pontianak",
+      "netIdr": 28080000,
+      "share": 0.0345,
+      "byMonth": {
+        "2026-09": 12640000,
+        "2026-10": 15440000
+      },
+      "changePct": 22.2
+    },
+    {
+      "key": "Samarinda",
+      "netIdr": 26130000,
+      "share": 0.0321,
+      "byMonth": {
+        "2026-09": 17730000,
+        "2026-10": 8400000
+      },
+      "changePct": -52.6
     }
   ],
   "weakest": [

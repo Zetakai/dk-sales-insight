@@ -2,6 +2,7 @@ import { existsSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { REQUIRED_COLUMNS } from './csv';
 import { FIXTURE } from './fixture';
+import { FIXTURE as REGION_FIXTURE } from './fixture-region';
 import { FIXTURE as SALES_FIXTURE } from './fixture-sales';
 import { analyze, round } from './metrics';
 import type { RawRow } from './types';
@@ -63,6 +64,35 @@ describe.skipIf(!existsSync(real))('analyze(data/sales.csv)', () => {
     // Every line read is kept, dropped as a duplicate or listed as invalid: nothing disappears unexplained.
     const c = i.cleaning;
     expect(c.rowsKept + c.duplicates.length + c.invalid.length).toBe(c.rowsRead);
+  });
+});
+
+describe('analyze(sample, region)', () => {
+  it('deep-equals the Python reference for one region (fixture-region.ts, Jawa Tengah)', () => {
+    expect(analyze(sample, 'Jawa Tengah')).toEqual(REGION_FIXTURE);
+  });
+
+  it('counts only that region, but keeps the company months and the company peer medians', () => {
+    const all = analyze(sample);
+    const jt = analyze(sample, 'Jawa Tengah');
+    const sum = (xs: { netIdr: number }[]) => xs.reduce((s, x) => s + x.netIdr, 0);
+    expect(jt.scope).toEqual({ region: 'Jawa Tengah' });
+    expect(jt.period.months).toEqual(all.period.months);
+    expect(jt.totals.netIdr).toBe(all.byRegion.find((r) => r.key === 'Jawa Tengah')!.netIdr);
+    expect(sum(jt.byBranch)).toBe(jt.totals.netIdr);
+    expect(sum(jt.byBrand)).toBe(jt.totals.netIdr);
+    expect(jt.outlets.every((o) => o.region === 'Jawa Tengah')).toBe(true);
+    for (const o of jt.outlets) {
+      expect(o).toEqual(all.outlets.find((x) => x.outletId === o.outletId)); // same score as company-wide
+    }
+    expect(jt.cleaning).toEqual(all.cleaning); // data quality is about the whole file
+  });
+
+  it('a region with no lines gives an empty result, not a throw', () => {
+    const none = analyze(sample, 'Papua');
+    expect(none.totals.netIdr).toBe(0);
+    expect(none.outlets).toEqual([]);
+    expect(none.byBranch).toEqual([]);
   });
 });
 

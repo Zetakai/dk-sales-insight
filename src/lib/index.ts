@@ -5,7 +5,7 @@
  *   formatIdr / formatPct   -> display helpers shared by the UI and the summary
  */
 export type * from './types';
-export { analyze } from './metrics';
+export { analyze, computeInsights, load } from './metrics';
 export { CsvFileError } from './csv';
 export { biggestMover, telegramSummary } from './summary';
 export { formatIdr, formatIdrFull, formatPct, formatMonth } from './format';

@@ -149,16 +149,19 @@ function compose(i: Insights, lang: Lang, d: Detail, layout: SummaryLayout): str
     parts = [];
   };
 
+  // A region's summary names the region up front and compares its branches; the whole file's compares regions.
+  const scope = i.scope.region;
+
   // 1. Period, net, and the change last month vs first month.
-  let head = `${w.sales} ${periodLabel(i.period.from, i.period.to, lang)}: ${w.net} ${formatIdr(i.totals.netIdr, lang)}`;
+  let head = `${w.sales} ${scope ? `${scope} ` : ''}${periodLabel(i.period.from, i.period.to, lang)}: ${w.net} ${formatIdr(i.totals.netIdr, lang)}`;
   if (twoMonths && i.totals.changePct !== null) {
     head += `, ${mon(last)} ${move(i.totals.changePct, w, lang)} ${w.vs} ${mon(first)}`;
   }
   parts.push(`${head}.`);
   endBlock();
 
-  // 2. Strongest and weakest region, then the region that moved most and the branch behind it.
-  const regions = i.byRegion;
+  // 2. Strongest and weakest region (branch, for one region), then the one that moved most and the branch behind it.
+  const regions = scope ? i.byBranch : i.byRegion;
   if (regions.length > 0) {
     const top = regions[0];
     let s = `${top.key} ${w.highest} (${formatIdr(top.netIdr, lang)}, ${formatPct(top.share * 100, lang, false)} ${w.ofTotal})`;
@@ -208,8 +211,9 @@ function compose(i: Insights, lang: Lang, d: Detail, layout: SummaryLayout): str
   }
   endBlock();
 
-  // 5. One short data note, only when cleaning changed something.
-  if (d.note) {
+  // 5. One short data note, only when cleaning changed something. It is about the whole file, so a region's summary
+  // leaves it out rather than pin the file's duplicates on that region.
+  if (d.note && !scope) {
     const c = i.cleaning;
     const notes: string[] = [];
     if (c.duplicates.length > 0) notes.push(w.dupes(c.duplicates.length));

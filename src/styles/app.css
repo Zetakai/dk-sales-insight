@@ -1080,6 +1080,45 @@
   color: var(--ink-3);
 }
 
+/* ---------------------------------------------------------------- Filter bar */
+
+.filterbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.filter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s-3);
+}
+
+.filter__label {
+  font-size: var(--t-sm);
+  font-weight: 500;
+  color: var(--ink-3);
+}
+
+/* A native select: keyboard, screen readers and phones handle it for free. */
+.filter__select {
+  min-height: 36px;
+  padding: 0 var(--s-8) 0 var(--s-3);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-sm);
+  background-color: var(--raised);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.filter__select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 /* ---------------------------------------------------------------- Wide screens: dashboard grid */
 
 @media (min-width: 1200px) {

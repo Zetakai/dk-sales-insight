@@ -24,7 +24,7 @@ export without a restart; the header says which file is shown. A loaded file is 
 uploaded anywhere.
 
 ```bash
-npm test            # 65 tests: CSV parsing, cleaning, metrics, the summary
+npm test            # 70 tests: CSV parsing, cleaning, metrics, the region filter, the summary
 npm run typecheck
 npm run build       # static site in dist/
 ```
@@ -33,6 +33,7 @@ npm run build       # static site in dist/
 
 | Section | How it is worked out |
 |---|---|
+| Wilayah filter | All regions, or one: every section below then covers that region only, and the region chart becomes its branches |
 | Net sales | After discounts and returns, with the change from the first month to the last |
 | By region | Both months side by side, and the branch that moved the region most (in rupiah) |
 | By brand | Total, share of all sales, and the change |
@@ -70,7 +71,7 @@ data/demo.csv   synthetic data (scripts/make-demo.mjs) with the same columns and
 
 **Two independent implementations agree on every number.** `scripts/reference_insights.py` computes the same
 insights in plain Python from the spec, and the tests compare the app's result with it field by field, on both the
-sample from the brief and the synthetic demo.
+sample from the brief, the synthetic demo, and one region of the demo.
 
 ## How I built it with Claude Code
 

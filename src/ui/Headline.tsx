@@ -14,7 +14,7 @@ export function Headline({ insights }: { insights: Insights }) {
   return (
     <section className="headline" aria-label={t.headlineAria}>
       <div className="hero">
-        <p className="figure__label">{t.netSales}</p>
+        <p className="figure__label">{insights.scope.region ? t.netSalesIn(insights.scope.region) : t.netSales}</p>
         <p className="hero__value">
           {sign}
           <span className="hero__unit">Rp</span>

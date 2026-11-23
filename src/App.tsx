@@ -1,4 +1,5 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
+import { computeInsights } from './lib';
 import { BrandSection, RegionSection } from './ui/ChartViews';
 import { DataQuality } from './ui/DataQuality';
 import { Header } from './ui/Header';
@@ -35,7 +36,16 @@ export default function App() {
     );
   };
 
-  const { insights, source, error, busy } = data;
+  const { dataset, source, error, busy } = data;
+  // The whole file, measured once per file; a region is measured from the same cleaned lines on demand.
+  const all = useMemo(() => (dataset ? computeInsights(dataset.lines, dataset.cleaning) : null), [dataset]);
+  const [region, setRegion] = useState<string | null>(null);
+  // A region the current file does not have (another file was loaded) falls back to all regions.
+  const activeRegion = region !== null && all?.byRegion.some((r) => r.key === region) ? region : null;
+  const insights = useMemo(
+    () => (dataset && activeRegion ? computeInsights(dataset.lines, dataset.cleaning, activeRegion) : all),
+    [dataset, all, activeRegion],
+  );
   const hasData = !!insights && insights.period.months.length > 0;
   const invalid = insights?.cleaning.invalid.length ?? 0;
 
@@ -53,7 +63,7 @@ export default function App() {
   return (
     <div className="page">
       <Header
-        insights={insights}
+        insights={all}
         source={source}
         busy={busy}
         theme={theme}
@@ -97,6 +107,30 @@ export default function App() {
 
         {hasData && insights ? (
           <>
+            {all && all.byRegion.length > 1 ? (
+              <div className="filterbar">
+                <label className="filter">
+                  <span className="filter__label">{t.filterRegion}</span>
+                  <select
+                    className="filter__select"
+                    value={activeRegion ?? ''}
+                    onChange={(e) => setRegion(e.target.value || null)}
+                  >
+                    <option value="">{t.allRegions}</option>
+                    {all.byRegion.map((r) => (
+                      <option key={r.key} value={r.key}>
+                        {r.key}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                {activeRegion ? (
+                  <button type="button" className="btn btn--quiet" onClick={() => setRegion(null)}>
+                    {t.clearFilter}
+                  </button>
+                ) : null}
+              </div>
+            ) : null}
             <Headline insights={insights} />
             <RegionSection insights={insights} />
             <BrandSection insights={insights} />

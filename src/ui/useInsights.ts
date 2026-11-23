@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { analyze, CsvFileError, telegramSummary } from '../lib';
-import type { Insights, Lang, SummaryLayout } from '../lib';
+import { CsvFileError, load, telegramSummary } from '../lib';
+import type { Dataset, Insights, Lang, SummaryLayout } from '../lib';
 
 /**
  * Default data: data/sales.csv (the sample export from the brief), else data/demo.csv (synthetic). Lazy glob, so a
@@ -40,7 +40,8 @@ function loadError(fileName: string, err: unknown): LoadError {
 }
 
 type State = {
-  insights: Insights | null;
+  /** The cleaned file. App measures it for the whole company or one region, without re-reading the CSV. */
+  dataset: Dataset | null;
   source: Source;
   error: LoadError | null;
   busy: boolean;
@@ -71,7 +72,7 @@ export function useInsights() {
   const [state, setState] = useState<State>(() => {
     const d = defaultSource();
     return {
-      insights: null,
+      dataset: null,
       source: d ? { kind: d.kind, name: d.name } : { kind: 'none', name: '' },
       error: null,
       busy: !!d,
@@ -88,9 +89,9 @@ export function useInsights() {
     const n = ++seq.current;
     setState((s) => ({ ...s, busy: true, error: null }));
     try {
-      const insights = analyze(await d.load());
+      const dataset = load(await d.load());
       if (n !== seq.current) return;
-      setState({ insights, source: { kind: d.kind, name: d.name }, error: null, busy: false });
+      setState({ dataset, source: { kind: d.kind, name: d.name }, error: null, busy: false });
     } catch (err) {
       if (n !== seq.current) return;
       setState((s) => ({ ...s, busy: false, error: loadError(d.name, err) }));
@@ -101,7 +102,7 @@ export function useInsights() {
     void loadDefault();
   }, [loadDefault]);
 
-  const loadFile = useCallback(async (file: File): Promise<Insights | null> => {
+  const loadFile = useCallback(async (file: File): Promise<Dataset | null> => {
     const n = ++seq.current;
     const fail = (error: LoadError) => {
       if (n === seq.current) setState((s) => ({ ...s, busy: false, error }));
@@ -113,10 +114,10 @@ export function useInsights() {
 
     setState((s) => ({ ...s, busy: true, error: null }));
     try {
-      const insights = analyze(await file.text());
+      const dataset = load(await file.text());
       if (n !== seq.current) return null;
-      setState({ insights, source: { kind: 'file', name: file.name }, error: null, busy: false });
-      return insights;
+      setState({ dataset, source: { kind: 'file', name: file.name }, error: null, busy: false });
+      return dataset;
     } catch (err) {
       return fail(loadError(file.name, err));
     }

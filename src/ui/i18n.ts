@@ -107,6 +107,16 @@ const en = {
   viewTable: 'Table',
   legend: 'Legend',
   regionTitle: 'Sales by region',
+  branchTitle: (region: string) => `Sales by branch · ${region}`,
+  colBranch: 'Branch',
+  branchInsight: (b: Insight) =>
+    `${b.top} is the largest branch, ${b.share} of the region's sales.` +
+    (b.mover ? ` ${b.mover.name} moved most, ${b.mover.change}.` : ''),
+  filterRegion: 'Region',
+  allRegions: 'All regions',
+  clearFilter: 'Show all regions',
+  netSalesIn: (region: string) => `Net sales · ${region}`,
+  peersScoped: (region: string) => `Outlets in ${region}, against company-wide medians.`,
   regionShowAs: 'Show regions as',
   regionInsight: (r: Insight) =>
     `${r.top} is the largest region, ${r.share} of sales.` +
@@ -284,6 +294,16 @@ const id: Strings = {
   viewTable: 'Tabel',
   legend: 'Legenda',
   regionTitle: 'Penjualan per wilayah',
+  branchTitle: (region) => `Penjualan per cabang · ${region}`,
+  colBranch: 'Cabang',
+  branchInsight: (b) =>
+    `${b.top} cabang terbesar, ${b.share} dari penjualan wilayah ini.` +
+    (b.mover ? ` ${b.mover.name} paling bergerak, ${b.mover.change}.` : ''),
+  filterRegion: 'Wilayah',
+  allRegions: 'Semua wilayah',
+  clearFilter: 'Tampilkan semua wilayah',
+  netSalesIn: (region) => `Penjualan bersih · ${region}`,
+  peersScoped: (region) => `Outlet di ${region}, dibanding median se-perusahaan.`,
   regionShowAs: 'Tampilkan wilayah sebagai',
   regionInsight: (r) =>
     `${r.top} wilayah terbesar, ${r.share} dari penjualan.` +

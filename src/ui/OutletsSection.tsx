@@ -24,8 +24,10 @@ export function OutletsSection({ insights }: { insights: Insights }) {
     { value: 'drops', label: t.modeDrops },
   ];
 
+  const scoped = insights.scope.region;
   const lede =
-    mode === 'peers' ? t.ledePeers : two ? t.ledeDrops(f.monthShort(first), f.monthShort(last)) : t.needsTwoMonths;
+    (mode === 'peers' ? t.ledePeers : two ? t.ledeDrops(f.monthShort(first), f.monthShort(last)) : t.needsTwoMonths) +
+    (scoped && mode === 'peers' ? ` ${t.peersScoped(scoped)}` : '');
 
   return (
     <Section

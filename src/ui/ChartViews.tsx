@@ -60,9 +60,12 @@ export function RegionSection({ insights }: { insights: Insights }) {
   const series = monthSeries(insights, f);
   const { first, last, two } = monthsOf(insights);
   const vs = changeLabel(insights, f, t);
-  const regionInsight = insightOf(insights.byRegion, insights, f);
+  // One region picked: the same chart, by branch (a branch has no driver of its own).
+  const scoped = insights.scope.region;
+  const areas = scoped ? insights.byBranch : insights.byRegion;
+  const areaInsight = insightOf(areas, insights, f);
 
-  const rows: BarRow[] = insights.byRegion.map((r) => {
+  const rows: BarRow[] = areas.map((r) => {
     const values = series.map((s) => r.byMonth[s.id] ?? 0);
     const d = r.driver;
     return {
@@ -89,8 +92,8 @@ export function RegionSection({ insights }: { insights: Insights }) {
   return (
     <Section
       className="sheet--region"
-      title={t.regionTitle}
-      lede={regionInsight ? t.regionInsight(regionInsight) : undefined}
+      title={scoped ? t.branchTitle(scoped) : t.regionTitle}
+      lede={areaInsight ? (scoped ? t.branchInsight(areaInsight) : t.regionInsight(areaInsight)) : undefined}
       extra={view === 'chart' ? <Legend series={series} /> : null}
       tools={<SegmentedControl legend={t.regionShowAs} options={views} value={view} onChange={setView} />}
     >
@@ -99,14 +102,14 @@ export function RegionSection({ insights }: { insights: Insights }) {
           series={series}
           rows={rows}
           labelSeries={series.length - 1}
-          columns={[t.colRegion, t.colNetRp, two ? t.colRegionAside(vs) : '']}
+          columns={[scoped ? t.colBranch : t.colRegion, t.colNetRp, two ? (scoped ? vs : t.colRegionAside(vs)) : '']}
         />
       ) : (
         <div className="table-wrap" tabIndex={0} role="region" aria-label={t.regionTableAria}>
           <table className="table">
             <thead>
               <tr>
-                <th scope="col">{t.colRegion}</th>
+                <th scope="col">{scoped ? t.colBranch : t.colRegion}</th>
                 {two ? (
                   <th scope="col" className="num">
                     {f.monthLong(first)}
@@ -126,11 +129,11 @@ export function RegionSection({ insights }: { insights: Insights }) {
                     {vs}
                   </th>
                 ) : null}
-                {two ? <th scope="col">{t.biggestMove}</th> : null}
+                {two && !scoped ? <th scope="col">{t.biggestMove}</th> : null}
               </tr>
             </thead>
             <tbody>
-              {insights.byRegion.map((r) => (
+              {areas.map((r) => (
                 <tr key={r.key}>
                   <th scope="row">{r.key}</th>
                   {two ? <td className="num">{f.idrFull(r.byMonth[first] ?? 0)}</td> : null}
@@ -138,7 +141,7 @@ export function RegionSection({ insights }: { insights: Insights }) {
                   <td className="num">{f.idrFull(r.netIdr)}</td>
                   <td className="num">{f.ratio(r.share)}</td>
                   {two ? <td className="num">{f.pct(r.changePct)}</td> : null}
-                  {two ? (
+                  {two && !scoped ? (
                     <td>
                       {r.driver ? (
                         <>

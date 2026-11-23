@@ -6,6 +6,9 @@ import type { Insights } from './types';
  * percentages to 1 decimal.
  */
 export const FIXTURE: Insights = {
+  "scope": {
+    "region": null
+  },
   "period": {
     "from": "2026-09-01",
     "to": "2026-10-31",
@@ -200,6 +203,138 @@ export const FIXTURE: Insights = {
         "2026-10": 17910000
       },
       "changePct": 8.6
+    }
+  ],
+  "byBranch": [
+    {
+      "key": "Tangerang",
+      "netIdr": 249019600,
+      "share": 0.1443,
+      "byMonth": {
+        "2026-09": 124930600,
+        "2026-10": 124089000
+      },
+      "changePct": -0.7
+    },
+    {
+      "key": "Bandung",
+      "netIdr": 219689300,
+      "share": 0.1273,
+      "byMonth": {
+        "2026-09": 125469200,
+        "2026-10": 94220100
+      },
+      "changePct": -24.9
+    },
+    {
+      "key": "Medan",
+      "netIdr": 194674000,
+      "share": 0.1128,
+      "byMonth": {
+        "2026-09": 96673300,
+        "2026-10": 98000700
+      },
+      "changePct": 1.4
+    },
+    {
+      "key": "Solo",
+      "netIdr": 169556700,
+      "share": 0.0982,
+      "byMonth": {
+        "2026-09": 93614300,
+        "2026-10": 75942400
+      },
+      "changePct": -18.9
+    },
+    {
+      "key": "Jakarta Barat",
+      "netIdr": 168834700,
+      "share": 0.0978,
+      "byMonth": {
+        "2026-09": 76495000,
+        "2026-10": 92339700
+      },
+      "changePct": 20.7
+    },
+    {
+      "key": "Palembang",
+      "netIdr": 146016500,
+      "share": 0.0846,
+      "byMonth": {
+        "2026-09": 81644000,
+        "2026-10": 64372500
+      },
+      "changePct": -21.2
+    },
+    {
+      "key": "Malang",
+      "netIdr": 143982000,
+      "share": 0.0834,
+      "byMonth": {
+        "2026-09": 40999800,
+        "2026-10": 102982200
+      },
+      "changePct": 151.2
+    },
+    {
+      "key": "Balikpapan",
+      "netIdr": 112271400,
+      "share": 0.065,
+      "byMonth": {
+        "2026-09": 60493600,
+        "2026-10": 51777800
+      },
+      "changePct": -14.4
+    },
+    {
+      "key": "Cirebon",
+      "netIdr": 91258000,
+      "share": 0.0529,
+      "byMonth": {
+        "2026-09": 41595300,
+        "2026-10": 49662700
+      },
+      "changePct": 19.4
+    },
+    {
+      "key": "Bekasi",
+      "netIdr": 77973500,
+      "share": 0.0452,
+      "byMonth": {
+        "2026-09": 37580500,
+        "2026-10": 40393000
+      },
+      "changePct": 7.5
+    },
+    {
+      "key": "Surabaya",
+      "netIdr": 67396500,
+      "share": 0.039,
+      "byMonth": {
+        "2026-09": 31301600,
+        "2026-10": 36094900
+      },
+      "changePct": 15.3
+    },
+    {
+      "key": "Semarang",
+      "netIdr": 53324800,
+      "share": 0.0309,
+      "byMonth": {
+        "2026-09": 23333600,
+        "2026-10": 29991200
+      },
+      "changePct": 28.5
+    },
+    {
+      "key": "Banjarmasin",
+      "netIdr": 31969000,
+      "share": 0.0185,
+      "byMonth": {
+        "2026-09": 13386600,
+        "2026-10": 18582400
+      },
+      "changePct": 38.8
     }
   ],
   "weakest": [

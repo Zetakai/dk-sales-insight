@@ -85,6 +85,20 @@ describe.each(['id', 'en'] as const)('telegramSummary(sample, %s, lines)', (lang
   });
 });
 
+describe('telegramSummary for one region', () => {
+  const jt = analyze(sample, 'Jawa Tengah');
+
+  it.each(['id', 'en'] as const)('names the region, compares its branches, lists its outlets, no file note (%s)', (lang) => {
+    const text = telegramSummary(jt, lang);
+    expect(text.startsWith(`${lang === 'id' ? 'Penjualan' : 'Sales'} Jawa Tengah 1 Sep`)).toBe(true);
+    expect(text).toContain(jt.byBranch[0].key);
+    expect(jt.byBranch.map((b) => b.key).every((b) => ['Semarang', 'Purwokerto'].includes(b))).toBe(true);
+    for (const o of jt.weakest) expect(text).toContain(o.outletName);
+    expect(text).not.toMatch(/Catatan data|Data note/);
+    expect(text.length).toBeLessThanOrEqual(900);
+  });
+});
+
 describe('telegramSummary, other cases', () => {
   it('defaults to Indonesian', () => {
     expect(telegramSummary(insights)).toBe(telegramSummary(insights, 'id'));
